@@ -12,7 +12,7 @@ const dateSchema = new Schema({
     partner: {
         type: String,
         required: true,
-    },
+    }
 });
 
 const Dates = model('Dates', dateSchema);
