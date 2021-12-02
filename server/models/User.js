@@ -12,3 +12,7 @@ const userSchema = new userSchema({
         unique: true
     },
 });
+
+const User = model('User', userSchema);
+
+module.exports = User;
