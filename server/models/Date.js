@@ -12,9 +12,10 @@ const dateSchema = new Schema({
     partner: {
         type: String,
         required: true,
+        match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
     }
 });
 
-const Dates = model('Dates', dateSchema);
+const Dates = model('Date', dateSchema);
 
 module.exports = Dates;

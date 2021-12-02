@@ -1,5 +1,5 @@
-const Activities = require('./Activities')
-const Dates = require('./Dates')
+const Activity = require('./Activity')
+const Date = require('./Date')
 const User = require('./User')
 
-module.exports = {Activities, Dates, User};
+module.exports = {Activity, Date, User};
