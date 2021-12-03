@@ -597,14 +597,58 @@ const activities = [
             'daytime',
         ]
     },
+    {
+        name: 'Farm Festivities',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime',
+        ]
+    },
+    {
+        name: 'Watch Sunrise',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'daytime',
+        ]
+    },
+    {
+        name: 'Watch Sunset',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'nighttime',
+        ]
+    },
+    {
+        name: 'Wine Tasting',
+        characteristics: [
+            'informal',
+            'formal',
+            'outdoors',
+            'indoors',
+            'relaxed',
+            'daytime',
+        ]
+    },
+    {
+        name: 'Brewery/Tasting',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
+        ]
+    },
 ]
 
-
-Farm festivities--informal, outdoors, relaxed, active, daytime
-Watch sunrise--informal, outdoors, relaxed, nighttime
-Watch sunset--informal, outdoors, relaxed, daytime
-Wine tasting--informal, formal, outdoors, indoors, relaxed, daytime
-Brewery(beer tasting)--informal, outdoors, indoors, relaxed, daytime, nighttime
 Bar crawl--informal, outdoors, indoors, relaxed, active, daytime, nighttime
 Camping--informal, outdoors, relaxed, active, daytime, nighttime
 Arcade--informal, indoors, relaxed, active, nighttime, daytime
