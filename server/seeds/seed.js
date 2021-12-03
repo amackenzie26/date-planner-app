@@ -52,452 +52,487 @@ const activities = [
     {
         name: 'Picnic',
         characteristics: [
-            informal,
-            outdoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'outdoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Hiking',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Movie',
         characteristics: [
-            informal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Bowling',
         characteristics: [
-            informal,
-            indoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'indoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Art Gallery',
         characteristics: [
-            formal,
-            informal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'formal',
+            'informal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Museum',
         characteristics: [
-            formal,
-            informal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'formal',
+            'informal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Amusement Park',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Surfing',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime'
         ]
     },
     {
         name: 'Skiing',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime'
         ]
     },
     {
         name: 'Paint and Sip',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Private Chef',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Cooking Lesson',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Concert',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Club',
         characteristics: [
-            informal,
-            indoors,
-            active,
-            nighttime
+            'informal',
+            'indoors',
+            'active',
+            'nighttime'
         ]
     },
     {
         name: 'Bar',
         characteristics: [
-            informal,
-            indoors,
-            relaxed,
-            nighttime
+            'informal',
+            'indoors',
+            'relaxed',
+            'nighttime'
         ]
     },
     {
         name: 'Volleyball',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Boat Tour',
         characteristics: [
-            informal,
-            outdoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'outdoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Casino',
         characteristics: [
-            informal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Take a Walk',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Star Gazing',
         characteristics: [
-            informal,
-            outdoors,
-            relaxed,
-            nighttime
+            'informal',
+            'outdoors',
+            'relaxed',
+            'nighttime'
         ]
     },
     {
         name: 'Rock Climbing',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime'
         ]
     },
     {
         name: 'Ax Throwing',
         characteristics: [
-            informal, indoors, active, daytime, nighttime
+            'informal',
+            'indoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Golfing',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime'
         ]
     },
     {
         name: 'Mini Golf',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime'
         ]
     },
     {
         name: 'Comedy Show',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Poetry Reading',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Coffee',
         characteristics: [
-            informal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Beach',
         characteristics: [
-            informal,
-            outdoors,
-            relaxed,
-            active,
-            daytime
+            'informal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime'
         ]
     },
     {
         name: 'Fitness Class',
         characteristics: [
-            informal,
-            indoors,
-            outdoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'indoors',
+            'outdoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Dance Lesson',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Brunch',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime'
         ]
     },
     {
         name: 'Dinner Out',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'nighttime'
         ]
     },
     {
         name: 'Lunch Out',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime'
         ]
     },
     {
         name: 'Breakfast Out',
         characteristics: [
-            informal,
-            indoors,
-            relaxed,
-            daytime
+            'informal',
+            'indoors',
+            'relaxed',
+            'daytime'
         ]
     },
     {
         name: 'Sporting Event',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            outdoors,
-            active,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'indoors',
+            'outdoors',
+            'active',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Go to a Play',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Go to a Show',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Opera',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            daytime,
-            nighttime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Karaoke',
         characteristics: [
-            informal,
-            indoors,
-            relaxed,
-            active,
-            nighttime
+            'informal',
+            'indoors',
+            'relaxed',
+            'active',
+            'nighttime'
         ]
     },
     {
         name: 'Hookah Bar',
         characteristics: [
-            informal,
-            indoors,
-            relaxed,
-            active,
-            nighttime
+            'informal',
+            'indoors',
+            'relaxed',
+            'active',
+            'nighttime'
         ]
     },
     {
         name: 'Spa',
         characteristics: [
-            informal,
-            formal,
-            indoors,
-            relaxed,
-            nighttime,
-            daytime
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'nighttime',
+            'daytime'
         ]
     },
     {
         name: 'Ice Skating',
         characteristics: [
-            informal,
-            outdoors,
-            active,
-            daytime,
-            nighttime
+            'informal',
+            'outdoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
     {
         name: 'Skate Rink',
         characteristics: [
-            informal,
-            indoors,
-            active,
-            daytime
+            'informal',
+            'indoors',
+            'active',
+            'daytime'
         ]
     },
     {
         name: 'Paintball',
         characteristics: [
-            informal,
-            indoors,
-            outdoors,
-            active,
-            daytime
+            'informal',
+            'indoors',
+            'outdoors',
+            'active',
+            'daytime'
+        ]
+    },
+    {
+        name: 'Go Karts',
+        characteristics: [
+            'informal',
+            'indoors',
+            'outdoors',
+            'active',
+            'daytime'
+        ]
+    },
+    {
+        name: 'Hotel Stay',
+        characteristics: [
+            'informal',
+            'formal',
+            'indoors',
+            'relaxed',
+            'nighttime'
+        ]
+    },
+    {
+        name: 'Site Seeing',
+        characteristics: [
+            'informal',
+            'formal',
+            'indoors',
+            'outdoors',
+            'active',
+            'daytime',
+            'nighttime'
         ]
     },
 ]
 
-Go kart--informal, indoors, outdoors, active, daytime
-Hotel--informal, formal, indoors, relaxed, nighttime
-Site seeing--informal, formal, indoors, outdoors, active, daytime, nighttime
-Shopping--informal, indoors, relaxed, active, daytime
+--
+--
+--
+    Shopping--informal, indoors, relaxed, active, daytime
 Ice cream--informal, outdoors, indoors, relaxed, daytime, nighttime
 Biking--informal, outdoors, active, daytime
 Take a drive--informal, outdoors, indoors, relaxed, daytime, nighttime
