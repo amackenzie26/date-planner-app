@@ -13,8 +13,11 @@ const dateSchema = new Schema({
         type: String,
         required: true,
         match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+    },
+    activity: {
+        type: String
     }
-    //should we add activity!?
+    //update to tie to Activity model!?
 });
 
 
