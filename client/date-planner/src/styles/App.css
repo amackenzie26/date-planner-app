@@ -73,5 +73,32 @@
   border-radius: 5px;
 }
 
+.header {
+  width: 100%;
+  background-color: burlywood;
+}
+
+.app-nav {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+}
+
+.dashbboard-container {
+  background-color: white;
+}
+
+.favorites-container {
+  background-color: lightgoldenrodyellow;
+}
+
+.card {
+  background-color: lightskyblue;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+
 
 
