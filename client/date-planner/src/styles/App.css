@@ -73,5 +73,67 @@
   border-radius: 5px;
 }
 
+.header {
+  width: 100%;
+  background-color: burlywood;
+}
+
+.app-nav {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+}
+
+.dashbboard-container {
+  background-color: white;
+}
+
+.favorites-container {
+  background-color: lightgoldenrodyellow;
+}
+
+.card {
+  background-color: lightskyblue;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+.a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+}
+
+.h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.h3 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.prompt-card {
+  background-color: lightpink;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+.idea-container {
+  background-color: lightpink;
+}
+
+.suggestion-card {
+  background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+
 
 

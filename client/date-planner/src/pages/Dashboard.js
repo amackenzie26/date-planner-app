@@ -8,8 +8,8 @@ const Dashboard = () => {
     return (
         <div>
             <header>
-                <nav>
-                    <a class="plan-link">Plan A Date</a>
+                <nav class='app-nav'>
+                    <a class="plan-link">Plan A Date make href</a>
                     <a class="profile-link">Profile</a>
                     <a class="calendar-link">Calendar</a>
                 </nav>
