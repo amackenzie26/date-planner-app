@@ -294,16 +294,79 @@ const activities = [
             nighttime
         ]
     },
+    {
+        name: 'Poetry Reading',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Coffee',
+        characteristics: [
+            informal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Beach',
+        characteristics: [
+            informal,
+            outdoors,
+            relaxed,
+            active,
+            daytime
+        ]
+    },
+    {
+        name: 'Fitness Class',
+        characteristics: [
+            informal,
+            indoors,
+            outdoors,
+            active,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Dance Lesson',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            active,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Brunch',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime
+        ]
+    },
 ]
 
 
-Poetry reading--informal, formal, indoors, relaxed, daytime, nighttime
-Coffee--informal, indoors, relaxed, daytime, nighttime
-Beach--informal, outdoors, relaxed, active, daytime, nighttime
-Fitness class--informal, indoors, outdoors, active
-Dance lesson--informal, formal, indoors, active
-Brunch--informal, formal, indoors, relaxed, daytime
-Dinner--informal, formal, indoors, relaxed, nighttime
+--
+--
+--
+--
+--
+--
+    Dinner--informal, formal, indoors, relaxed, nighttime
 Sporting event--informal, formal, indoors, outdoors, active, relaxed, daytime, nighttime
 Show(play, opera, etc.)--informal, formal, indoors, relaxed, daytime, nighttime
 Karaoke--informal, indoors, relaxed, active, nighttime
