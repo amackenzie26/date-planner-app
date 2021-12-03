@@ -24,19 +24,21 @@ const dates = [
     {
         date: '12/12/21',
         title: 'Date with Cher',
-        partner: 'therealcher57@gmail.com'
+        partner: 'therealcher57@gmail.com',
+        activity: 'rollerblading'
     },
     {
         date: '12/15/21',
         title: 'Date with Tatiana',
-        partner: 'tatitats@gmail.com'
+        partner: 'tatitats@gmail.com',
+        activity: 'bar crawl'
     },
     {
         date: '12/16/21',
         title: 'Date with Griselda',
-        partner: 'thegriswhostolexmas@gmail.com'
+        partner: 'thegriswhostolexmas@gmail.com',
+        activity: 'museum'
     }
-    //add activities for each!!??
 ]
 
 db.once('open', async () => {
