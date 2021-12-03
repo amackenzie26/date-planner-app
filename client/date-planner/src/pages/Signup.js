@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Signup = () => {
 
-
-
     return (
         <div class="home-container">
             <h1 class="welcome">Welcome to Rendez-Vous!</h1>
