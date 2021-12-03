@@ -36,6 +36,7 @@ const dates = [
         title: 'Date with Griselda',
         partner: 'thegriswhostolexmas@gmail.com'
     }
+    //add activities for each!!??
 ]
 
 db.once('open', async () => {
