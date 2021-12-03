@@ -432,16 +432,68 @@ const activities = [
             nighttime
         ]
     },
+    {
+        name: 'Karaoke',
+        characteristics: [
+            informal,
+            indoors,
+            relaxed,
+            active,
+            nighttime
+        ]
+    },
+    {
+        name: 'Hookah Bar',
+        characteristics: [
+            informal,
+            indoors,
+            relaxed,
+            active,
+            nighttime
+        ]
+    },
+    {
+        name: 'Spa',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            nighttime,
+            daytime
+        ]
+    },
+    {
+        name: 'Ice Skating',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Skate Rink',
+        characteristics: [
+            informal,
+            indoors,
+            active,
+            daytime
+        ]
+    },
+    {
+        name: 'Paintball',
+        characteristics: [
+            informal,
+            indoors,
+            outdoors,
+            active,
+            daytime
+        ]
+    },
 ]
 
-
-
-Karaoke--informal, indoors, relaxed, active, nighttime
-Hookah bar--informal, indoors, relaxed, active, nighttime
-Spa--informal, formal, indoors, relaxed, nighttime, daytime
-Ice skating--informal, outdoors, active
-Skate Rink - informal, indoors, active
-Paintball--informal, indoors, outdoors, active
 Go kart--informal, indoors, outdoors, active, daytime
 Hotel--informal, formal, indoors, relaxed, nighttime
 Site seeing--informal, formal, indoors, outdoors, active, daytime, nighttime
