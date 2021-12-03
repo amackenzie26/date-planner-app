@@ -24,8 +24,7 @@ const Date = () => {
             <header>
                 <nav>
                     <a class="dashboard-link">Dashboard</a>
-                    <a class="profile-link">Profile</a>
-                    <a class="calendar-link">Calendar</a>
+                    <a class="calendar-link">My Calendar</a>
                 </nav>
             </header>
 

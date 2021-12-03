@@ -10,8 +10,7 @@ const Dashboard = () => {
             <header>
                 <nav class='app-nav'>
                     <a class="plan-link">Plan A Date make href</a>
-                    <a class="profile-link">Profile</a>
-                    <a class="calendar-link">Calendar</a>
+                    <a class="calendar-link">My Calendar</a>
                 </nav>
             </header>
 
