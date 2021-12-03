@@ -231,14 +231,72 @@ const activities = [
             nighttime
         ]
     },
+    {
+        name: 'Take a Walk',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Star Gazing',
+        characteristics: [
+            informal,
+            outdoors,
+            relaxed,
+            nighttime
+        ]
+    },
+    {
+        name: 'Rock Climbing',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime
+        ]
+    },
+    {
+        name: 'Ax Throwing',
+        characteristics: [
+            informal, indoors, active, daytime, nighttime
+        ]
+    },
+    {
+        name: 'Golfing',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime
+        ]
+    },
+    {
+        name: 'Mini Golf',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime
+        ]
+    },
+    {
+        name: 'Comedy Show',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
 ]
 
-    Take a walk--informal, outdoors, active, daytime, nighttime
-Star gazing--informal, outdoors, relaxed, nighttime
-Rock climbing--informal, outdoors, active
-Ax throwing--informal, indoors, active
-Golfing(mini, reg, TopGolf, driving range)--informal, outdoors, active
-Comedy show--informal, formal, indoors, relaxed, daytime, nighttime
+
 Poetry reading--informal, formal, indoors, relaxed, daytime, nighttime
 Coffee--informal, indoors, relaxed, daytime, nighttime
 Beach--informal, outdoors, relaxed, active, daytime, nighttime
