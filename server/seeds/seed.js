@@ -162,7 +162,7 @@ const activities = [
         ]
     },
     {
-        name: 'Cooking Lesson-',
+        name: 'Cooking Lesson',
         characteristics: [
             informal,
             formal,
@@ -172,15 +172,68 @@ const activities = [
             nighttime
         ]
     },
+    {
+        name: 'Concert',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Club',
+        characteristics: [
+            informal,
+            indoors,
+            active,
+            nighttime
+        ]
+    },
+    {
+        name: 'Bar',
+        characteristics: [
+            informal,
+            indoors,
+            relaxed,
+            nighttime
+        ]
+    },
+    {
+        name: 'Volleyball',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Boat Tour',
+        characteristics: [
+            informal,
+            outdoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Casino',
+        characteristics: [
+            informal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
 ]
 
-Concert--informal, formal, indoors, relaxed, daytime, nighttime
-Club--informal, indoors, active, nighttime
-Bar--informal, indoors, relaxed, nighttime
-Volleyball--informal, outdoors, active, daytime, nighttime
-Boat tour--informal, outdoors, relaxed, daytime, nighttime
-Casino--informal, indoors, relaxed, daytime, nighttime
-Take a walk--informal, outdoors, active, daytime, nighttime
+    Take a walk--informal, outdoors, active, daytime, nighttime
 Star gazing--informal, outdoors, relaxed, nighttime
 Rock climbing--informal, outdoors, active
 Ax throwing--informal, indoors, active
