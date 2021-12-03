@@ -527,18 +527,79 @@ const activities = [
             'nighttime'
         ]
     },
+    {
+        name: 'Shopping',
+        characteristics: [
+            'informal',
+            'indoors',
+            'active',
+            'relaxed',
+            'daytime',
+        ]
+    },
+    {
+        name: 'Ice Cream',
+        characteristics: [
+            'informal',
+            'indoors',
+            'outdoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
+        ]
+    },
+    {
+        name: 'Biking',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'active',
+            'daytime',
+        ]
+    },
+    {
+        name: 'Take A Drive',
+        characteristics: [
+            'informal',
+            'indoors',
+            'outdoors',
+            'relaxed',
+            'daytime',
+            'nighttime'
+        ]
+    },
+    {
+        name: 'Shooting Range',
+        characteristics: [
+            'informal',
+            'indoors',
+            'outdoors',
+            'active',
+            'daytime',
+        ]
+    },
+    {
+        name: 'Skydiving',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'active',
+            'daytime',
+        ]
+    },
+    {
+        name: 'Zoo',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime',
+        ]
+    },
 ]
 
---
---
---
-    Shopping--informal, indoors, relaxed, active, daytime
-Ice cream--informal, outdoors, indoors, relaxed, daytime, nighttime
-Biking--informal, outdoors, active, daytime
-Take a drive--informal, outdoors, indoors, relaxed, daytime, nighttime
-Gun range--informal, outdoors, active, daytime
-Skydiving--informal, outdoors, active, daytime
-Zoo--informal, outdoors, relaxed, active, daytime
+
 Farm festivities--informal, outdoors, relaxed, active, daytime
 Watch sunrise--informal, outdoors, relaxed, nighttime
 Watch sunset--informal, outdoors, relaxed, daytime
