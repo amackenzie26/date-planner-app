@@ -647,10 +647,50 @@ const activities = [
             'nighttime'
         ]
     },
+    {
+        name: 'Bar Crawl',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'indoors',
+            'relaxed',
+            'active',
+            'daytime',
+            'nighttime'
+        ]
+    },
+    {
+        name: 'Camping',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime',
+            'nighttime'
+        ]
+    },
+    {
+        name: 'Arcade',
+        characteristics: [
+            'informal',
+            'indoors',
+            'relaxed',
+            'active',
+            'daytime',
+            'nighttime'
+        ]
+    },
+    {
+        name: 'Lake Trip',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime',
+            'nighttime'
+        ]
+    },
 ]
-
-Bar crawl--informal, outdoors, indoors, relaxed, active, daytime, nighttime
-Camping--informal, outdoors, relaxed, active, daytime, nighttime
-Arcade--informal, indoors, relaxed, active, nighttime, daytime
-Lake trip--informal, outdoors, relaxed, active, nighttime, daytime
 
