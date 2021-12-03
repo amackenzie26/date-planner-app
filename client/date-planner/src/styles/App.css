@@ -1,13 +1,48 @@
-home-container {
+.home-container {
  background-color: white;
 }
 
-welcome {
+.welcome {
   justify-content: center;
   color: blue
 }
 
-card-login {
+.card-login {
+  background-color: burlywood;
+  justify-content: center;
+  border-radius: 7px;
+}
 
+.login-text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+}
+
+.username-login {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+}
+
+.password-login {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+}
+
+.submit-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+}
+
+.signup-button {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+}
+
+.logo {
+  justify-content: center;
+}
+
+.slogan {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
