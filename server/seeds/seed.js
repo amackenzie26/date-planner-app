@@ -694,3 +694,12 @@ const activities = [
     },
 ]
 
+db.once('open', async () => {
+    await Activity.deleteMany({});
+    await Activity.insertMany(activities);
+
+    console.log('ACTIVITIES SEEDED!');
+    console.log(activities);
+    process.exit(0);
+});
+
