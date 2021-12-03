@@ -78,11 +78,41 @@ const activities = [
             nighttime
         ]
     },
+    {
+        name: 'Bowling',
+        characteristics: [
+            informal,
+            indoors,
+            active,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Art Gallery',
+        characteristics: [
+            formal,
+            informal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Museum',
+        characteristics: [
+            formal,
+            informal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+
 ]
 
-Bowling--informal, indoors, active, daytime, nighttime
-Art gallery--formal, informal, indoors, relaxed, daytime, nighttime
-Museum--formal, informal, indoors, relaxed, daytime, nighttime
 Amusement park--informal, outdoors, active, daytime, nighttime
 Surfing--informal, outdoors, active, daytime
 Skiing--informal, outdoors, active, daytime
