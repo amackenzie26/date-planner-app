@@ -110,15 +110,69 @@ const activities = [
             nighttime
         ]
     },
-
+    {
+        name: 'Amusement Park',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Surfing',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime
+        ]
+    },
+    {
+        name: 'Skiing',
+        characteristics: [
+            informal,
+            outdoors,
+            active,
+            daytime
+        ]
+    },
+    {
+        name: 'Paint and Sip',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Private Chef',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Cooking Lesson-',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
 ]
 
-Amusement park--informal, outdoors, active, daytime, nighttime
-Surfing--informal, outdoors, active, daytime
-Skiing--informal, outdoors, active, daytime
-Paint and sip--informal, formal, indoors, relaxed, daytime, nighttime
-Private chef--informal, formal, indoors, relaxed, daytime, nighttime
-Cooking lessons--informal, formal, indoors, relaxed, daytime, nighttime
 Concert--informal, formal, indoors, relaxed, daytime, nighttime
 Club--informal, indoors, active, nighttime
 Bar--informal, indoors, relaxed, nighttime
