@@ -14,7 +14,9 @@ const dateSchema = new Schema({
         required: true,
         match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
     }
+    //should we add activity!?
 });
+
 
 const Dates = model('Date', dateSchema);
 
