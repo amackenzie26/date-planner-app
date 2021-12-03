@@ -357,18 +357,85 @@ const activities = [
             daytime
         ]
     },
+    {
+        name: 'Dinner Out',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            nighttime
+        ]
+    },
+    {
+        name: 'Lunch Out',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime
+        ]
+    },
+    {
+        name: 'Breakfast Out',
+        characteristics: [
+            informal,
+            indoors,
+            relaxed,
+            daytime
+        ]
+    },
+    {
+        name: 'Sporting Event',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            outdoors,
+            active,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Go to a Play',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Go to a Show',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
+    {
+        name: 'Opera',
+        characteristics: [
+            informal,
+            formal,
+            indoors,
+            relaxed,
+            daytime,
+            nighttime
+        ]
+    },
 ]
 
 
---
---
---
---
---
---
-    Dinner--informal, formal, indoors, relaxed, nighttime
-Sporting event--informal, formal, indoors, outdoors, active, relaxed, daytime, nighttime
-Show(play, opera, etc.)--informal, formal, indoors, relaxed, daytime, nighttime
+
 Karaoke--informal, indoors, relaxed, active, nighttime
 Hookah bar--informal, indoors, relaxed, active, nighttime
 Spa--informal, formal, indoors, relaxed, nighttime, daytime
