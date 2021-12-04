@@ -18,7 +18,7 @@ const Home = () => {
                 </form>
                 <button class="signup-button">Click here to sign up for an account. It's free!</button>
             </div>
-            <img class="logo"></img>
+            {/* <img class="logo"></img> */}
             <h3 class="slogan">CATCHY SLOGAN HERE</h3>
         </div>
     )
