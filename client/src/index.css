@@ -415,7 +415,7 @@
   }
   
   label {
-    display: inline-block;
+    display: block;
   }
   
   input,
@@ -977,7 +977,7 @@
   
   .btn {
     text-align: center;
-    display: inline-block;
+    display: block;
     padding: 0.5rem 1.2rem;
     margin: 0;
     text-decoration: none;
@@ -1150,7 +1150,7 @@
   
   form label,
   form .form-label {
-    display: inline-block;
+    display: block;
     font-size: 1.2rem;
     margin: 0.625rem 0 0.25rem 0.3rem;
   }
