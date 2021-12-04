@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-
-
     return (
         <div class="home-container">
             <h1 class="welcome">Welcome to Rendez-Vous!</h1>
@@ -12,8 +10,8 @@ const Home = () => {
             <div class="card-login">
                 <h2 class="login-text">Login to your account</h2>
                 <form class="login-form">
-                    <input class="username-login">Username:</input>
-                    <input class="password-login">Password:</input>
+                    <input type="text" class="username-login"  placeholder="Username" />
+                    <input type="text" class="password-login" placeholder="Password" />
                     <button class="submit-button">Login</button>
                 </form>
                 <button class="signup-button">Click here to sign up for an account. It's free!</button>
