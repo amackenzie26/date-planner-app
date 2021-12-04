@@ -14,8 +14,8 @@ const Signup = () => {
     const [userData, setUserData] = useState({
         username: '',
         email: '',
-        firstname: '',
-        lastname: '',
+        firstName: '',
+        lastName: '',
         password: '',
     })
     const [errorMessage, setErrorMessage] = useState('');
@@ -121,7 +121,7 @@ const Signup = () => {
                         id="firstname-signup" 
                         name="firstname"
                         type="text"
-                        value={userData.firstname}
+                        value={userData.firstName}
                         onChange={handleInputChange}
                     />
 
@@ -131,7 +131,7 @@ const Signup = () => {
                         id="lastname-signup" 
                         name="lastname"
                         type="text"
-                        value={userData.lastname}
+                        value={userData.lastName}
                         onChange={handleInputChange}
                     />
 
