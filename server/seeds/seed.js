@@ -1,5 +1,5 @@
 const db = require('../config/connection');
-const { User, Date, Activity } = require('../models');
+const { User, Dates, Activity } = require('../models');
 
 const users = [
     {
@@ -10,15 +10,6 @@ const users = [
         lastName: 'Gelato'
     }
 ]
-
-db.once('open', async () => {
-    await User.deleteMany({});
-    await User.insertMany(users);
-
-    console.log('USERS SEEDED!');
-    console.log(users);
-    process.exit(0);
-});
 
 const dates = [
     {
@@ -40,15 +31,6 @@ const dates = [
         activity: 'museum'
     }
 ]
-
-db.once('open', async () => {
-    await Date.deleteMany({});
-    await Date.insertMany(users);
-
-    console.log('DATES SEEDED!');
-    console.log(dates);
-    process.exit(0);
-});
 
 const activities = [
     {
@@ -697,11 +679,20 @@ const activities = [
 ]
 
 db.once('open', async () => {
+    await User.deleteMany({});
+    await User.insertMany(users);
+
+    console.log('USERS SEEDED!');
+
+    await Dates.deleteMany({});
+    await Dates.insertMany(dates);
+
+    console.log('DATES SEEDED!');
+
     await Activity.deleteMany({});
     await Activity.insertMany(activities);
 
     console.log('ACTIVITIES SEEDED!');
-    console.log(activities);
     process.exit(0);
 });
 
