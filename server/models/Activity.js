@@ -12,6 +12,6 @@ const activitySchema = new Schema({
     }
 });
 
-const Activity = model('Activity', activityScehma);
+const Activity = model('Activity', activitySchema);
 
 module.exports = Activity;
