@@ -1,71 +1,101 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { checkPassword, validateEmail, checkPasswordsMatch } from '../utils/helpers';
+import { createUser } from '../utils/api';
 
 const Signup = () => {
 
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [firstname, setFirstname] = useState('');
-    const [lastname, setLastname] = useState('');
-    const [password, setPassword] = useState('');
+    // const [username, setUsername] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [firstname, setFirstname] = useState('');
+    // const [lastname, setLastname] = useState('');
+    // const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const [userData, setUserData] = useState({
+        username: '',
+        email: '',
+        firstname: '',
+        lastname: '',
+        password: '',
+    })
     const [errorMessage, setErrorMessage] = useState('');
 
     const history = useHistory();
 
     const handleInputChange = (e) => {
 
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
+        const { name, value } = e.target;
 
-        if (inputType === 'username') {
-            setUsername(inputValue);
+        if (name === 'confirmPassword') {
+            setConfirmPassword(value);
+        } else {
+            setUserData({ ...userData, [name]: value })
         }
-        else if (inputType === 'email') {
-            setEmail(inputValue);
-        } else if (inputType === 'firstname') {
-            setFirstname(inputValue);
-        } else if (inputType === 'lastname') {
-            setLastname(inputValue);
-        } else if (inputType === 'password') {
-            setPassword(inputValue);
-        } else if (inputType === 'confirmPassword') {
-            setConfirmPassword(inputValue);
-        }
+
+        // const { target } = e;
+        // const inputType = target.name;
+        // const inputValue = target.value;
+
+        // if (inputType === 'username') {
+        //     setUsername(inputValue);
+        // }
+        // else if (inputType === 'email') {
+        //     setEmail(inputValue);
+        // } else if (inputType === 'firstname') {
+        //     setFirstname(inputValue);
+        // } else if (inputType === 'lastname') {
+        //     setLastname(inputValue);
+        // } else if (inputType === 'password') {
+        //     setPassword(inputValue);
+        // } else if (inputType === 'confirmPassword') {
+        //     setConfirmPassword(inputValue);
+        // }
     };
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit = async (e) => {
         e.preventDefault();
 
-        if (!validateEmail(email)) {
+        if (!validateEmail(userData.email)) {
             setErrorMessage('Email is invalid');
             return;
         }
 
-        if (!checkPasswordsMatch(password, confirmPassword)) {
+        if (!checkPasswordsMatch(userData.password, confirmPassword)) {
             setErrorMessage(
               `Passwords don't match`
             );
             return;
         }
 
-        if (!checkPassword(password)) {
+        if (!checkPassword(userData.password)) {
             setErrorMessage(
               `Choose a more secure password{ `
             );
             return;
         }
 
-        setUsername('');
-        setEmail('');
-        setFirstname('');
-        setLastname('');
-        setPassword('');
-        setConfirmPassword('');
+        try {
+            const res = await createUser(userData);
 
-        history.push('/');
+            if (!res.ok) {
+                throw new Error(`Couldn't create user`);
+            }
+
+            const user = await res.json();
+            console.log(user);
+            history.push('/');
+        } catch (err) {
+            console.error(err);
+        }
+
+        // setUsername('');
+        // setEmail('');
+        // setFirstname('');
+        // setLastname('');
+        // setPassword('');
+        // setConfirmPassword('');
+
+        
     }
 
     return (
@@ -81,7 +111,7 @@ const Signup = () => {
                         id="username-signup"
                         name="username"
                         type="text"
-                        value={username}
+                        value={userData.username}
                         onChange={handleInputChange}
                     />
                     
@@ -91,7 +121,7 @@ const Signup = () => {
                         id="firstname-signup" 
                         name="firstname"
                         type="text"
-                        value={firstname}
+                        value={userData.firstname}
                         onChange={handleInputChange}
                     />
 
@@ -101,7 +131,7 @@ const Signup = () => {
                         id="lastname-signup" 
                         name="lastname"
                         type="text"
-                        value={lastname}
+                        value={userData.lastname}
                         onChange={handleInputChange}
                     />
 
@@ -111,7 +141,7 @@ const Signup = () => {
                         id="email-signup" 
                         name="email"
                         type="email"
-                        value={email}
+                        value={userData.email}
                         onChange={handleInputChange}
                     />
 
@@ -121,7 +151,7 @@ const Signup = () => {
                         id="password-signup" 
                         name="password"
                         type="password"
-                        value={password}
+                        value={userData.password}
                         onChange={handleInputChange}
                     />
 
