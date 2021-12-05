@@ -4,7 +4,7 @@ const Suggestion = (props) => {
 
     return (
         <div class="suggestion-card card">
-            <button class="option-one">{props.suggestion}</button>
+            <button class="option-one">{props.sugg.name}</button>
         </div>
     )
 }

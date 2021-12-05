@@ -16,8 +16,8 @@ const Prompt = (props) => {
 
     return (
         <div class="prompt-card card">
-            <button onClick={handleButton} class="option-one" data-option={props.optionOne} >{props.optionOne}</button>
-            <button onClick={handleButton} class="option-two" data-option={props.optionTwo}>{props.optionTwo}</button>
+            <button onClick={handleButton} class="option-one" data-option={props.optionOne.name}>{props.optionOne.name}</button>
+            <button onClick={handleButton} class="option-two" data-option={props.optionTwo.name}>{props.optionTwo.name}</button>
         </div>
     )
 }
