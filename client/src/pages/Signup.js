@@ -119,7 +119,7 @@ const Signup = () => {
                     <input 
                         class="firstname-signup" 
                         id="firstname-signup" 
-                        name="firstname"
+                        name="firstName"
                         type="text"
                         value={userData.firstName}
                         onChange={handleInputChange}
@@ -129,7 +129,7 @@ const Signup = () => {
                     <input 
                         class="lastname-signup" 
                         id="lastname-signup" 
-                        name="lastname"
+                        name="lastName"
                         type="text"
                         value={userData.lastName}
                         onChange={handleInputChange}
