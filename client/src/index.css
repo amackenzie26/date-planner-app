@@ -217,7 +217,7 @@
   .option-one {
     /* background-color: #7B0828; */
     background-image: url(https://i.insider.com/5acbcd3f7708e94b4d7e47e4?width=600&format=jpeg&auto=webp);
-    background-size: cover;
+    background-size: cover; 
     color: white;
     font-size: 30px;
     border-radius: 5px;
@@ -230,7 +230,7 @@
   .option-two {
     /* background-color: #7B0828; */
     background-image: url(https://www.lovepanky.com/wp-content/uploads/2019/10/casual-first-date-ideas.jpg);
-    background-size: cover;
+    background-size: cover; 
     color: black;
     font-size: 30px;
     border-radius: 5px;
