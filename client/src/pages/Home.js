@@ -41,9 +41,9 @@ const Home = () => {
             <h1 class="welcome">Welcome to Rendez-Vous!</h1>
 
             <div class="card-login">
-                <h2 class="login-text">Login to your account</h2>
+                <h2 class="login-text">Log In to Your Account:</h2>
                 <form class="login-form">
-                    <label for="username-login">Username</label>
+                    <label class="login-font" for="username-login">Username</label>
                     <input
                         type="text"
                         class="username-login"
@@ -53,7 +53,7 @@ const Home = () => {
                         value={userData.username}
                         onChange={handleInputChange}
                     />
-                    <label for="password-login">Password</label>
+                    <label class="login-font" for="password-login">Password</label>
                     <input
                         type="password"
                         class="password-login"
