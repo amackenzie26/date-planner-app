@@ -224,14 +224,14 @@
     padding: 150px;
     justify-content: center;
     display: inline-block;
-    margin-left: -240px !important;
+    /* margin-left: -240px !important; */
     filter: drop-shadow(10px 10px 4px #8DAA9D)
   }
   .option-two {
     /* background-color: #7B0828; */
     background-image: url(https://www.lovepanky.com/wp-content/uploads/2019/10/casual-first-date-ideas.jpg);
     background-size: cover; 
-    color: black;
+    color: white;
     font-size: 30px;
     border-radius: 5px;
     padding: 150px;
@@ -472,7 +472,7 @@
   button {
     margin: 0;
     margin-bottom: 3px;
-    margin-left: 130px;
+    /* margin-left: 130px; */
     text-align: center;
   }
   
@@ -1785,3 +1785,9 @@
     }
   }
   
+  .prompt-container {
+    text-align: center;
+  }
+  .prompt-card button {
+    margin: 30px;
+  }
