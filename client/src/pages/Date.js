@@ -21,12 +21,6 @@ const Date = () => {
 
     return (
         <div>
-            <header>
-                <nav>
-                    <a class="dashboard-link">Dashboard</a>
-                    <a class="calendar-link">My Calendar</a>
-                </nav>
-            </header>
 
             <div class="date-prompts">
                 <div class="prompt-card card">
@@ -56,19 +50,21 @@ const Date = () => {
                     <h2 class="suggested-dates">Our Suggestions:</h2>
                     <div class="card suggestion-card">
                         <h3 class="activity-name">***********************************</h3>
-                        <img class="activity-image">*********************************</img>
+
+
                     </div>
                     <div class="card suggestion-card">
                         <h3 class="activity-name">***********************************</h3>
-                        <img class="activity-image">*********************************</img>
+
                     </div>
                     <div class="card suggestion-card">
                         <h3 class="activity-name">***********************************</h3>
-                        <img class="activity-image">*********************************</img>
+
                     </div>
 
                 </div>
-                <img class="logo"></img>
+
+
                 <h3 class="slogan">CATCHY SLOGAN HERE</h3>
             </div>
 
