@@ -4,18 +4,25 @@ import Prompt from "../components/Prompt"
 
 const Prompts = () => {
 
-    const options = {
-        "promptOne": ["formal", "informal"],
-        "promptTwo": ["outdoors", "indoors"],
-        "promptThree": ["active", "relaxed"],
-        "promptFour": ["daytime", "nighttime"]
+    const options = [
+        { optionOne: "formal", optionTwo: "informal" },
+        { optionOne: "outdoors", optionTwo: "indoors" },
+        { optionOne: "active", optionTwo: "relaxed" },
+        { optionOne: "daytime", optionTwo: "nighttime" }
+    ]
+
+    var prompts = [];
+
+    for (var i = 0; i < options.length; i++) {
+        prompts.push(<Prompt optionOne={options[i].optionOne} optionTwo={options[i].optionTwo} />)
     }
+
     return (
         <div>
 
             <div class="prompt-container">
                 <h2>Which is your date preference?</h2>
-                <Prompt></Prompt>
+                {prompts}
             </div>
 
         </div >

@@ -4,9 +4,8 @@ const Prompt = (props) => {
 
     return (
         <div class="prompt-card card">
-            <h2 class="prompt-question">{props.question}</h2>
-            <button class="option-one">{props.answerOne}</button>
-            <button class="option-two">{props.answerTwo}</button>
+            <button class="option-one">{props.optionOne}</button>
+            <button class="option-two">{props.optionTwo}</button>
         </div>
     )
 }
