@@ -11,6 +11,42 @@
     -webkit-text-size-adjust: 100%;
     /* 2 */
   }
+
+  .app-nav {
+    background-color: #522B47;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .plan-link {
+    margin-right: 10px;
+    color: #FBF5F3;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .dashboard-link {
+    margin-left: 830px;
+    margin-right: 10px;
+    color: #FBF5F3;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .calendar-link {
+    margin-right: 10px;
+    color: #FBF5F3;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .logout-link {
+    margin-right: 10px;
+    font-style: italic;
+    color: #FBF5F3;
+    font-family: 'Times New Roman', Times, serif;
+  }
   
   /* Sections
      ========================================================================== */
