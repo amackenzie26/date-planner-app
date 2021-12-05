@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Prompt = (props) => {
+const Suggestion = (props) => {
 
     return (
         <div class="prompt-card card">
@@ -11,4 +11,4 @@ const Prompt = (props) => {
     )
 }
 
-export default Prompt;
+export default Suggestion;
