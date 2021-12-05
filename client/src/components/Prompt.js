@@ -4,6 +4,7 @@ import { useHistory } from 'react-router';
 const Prompt = (props) => {
 
     const history = useHistory();
+
     const handleButton = (e) => {
         props.setAnswers([...props.answers, e.target.getAttribute("data-option")])
 
@@ -16,8 +17,8 @@ const Prompt = (props) => {
 
     return (
         <div class="prompt-card card">
-            <button onClick={handleButton} class="option-one" data-option={props.optionOne.name}>{props.optionOne.name}</button>
-            <button onClick={handleButton} class="option-two" data-option={props.optionTwo.name}>{props.optionTwo.name}</button>
+            <button style={{backgroundImage: 'url(' + props.optionOne.backgroundImage + ')'}} onClick={handleButton} class="option-one" data-option={props.optionOne.name}>{props.optionOne.name}</button>
+            <button style={{backgroundImage: 'url(' + props.optionTwo.backgroundImage + ')'}} onClick={handleButton} class="option-two" data-option={props.optionTwo.name}>{props.optionTwo.name}</button>
         </div>
     )
 }
