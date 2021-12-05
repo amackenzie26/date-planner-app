@@ -17,3 +17,12 @@ export const authenticateUser = (userData) => {
         body: JSON.stringify(userData)
     })
 }
+
+export const getAllSuggestions = () => {
+    return fetch('/api/suggestion', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+}
