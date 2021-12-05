@@ -213,6 +213,28 @@
   [type='submit']:-moz-focusring {
     outline: 1px dotted ButtonText;
   }
+
+  .option-one {
+    background-color: #7B0828;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    display: inline-block;
+    margin-left: 60px !important;
+  }
+  .option-two {
+    background-color: #7B0828;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    display: inline-block;
+  }
+
+  .prompt-card {
+    justify-content: center;
+  }
   
   /**
    * Correct the padding in Firefox.
@@ -1113,7 +1135,7 @@
   }
   
   .card {
-    border: 1px solid #1a1a1a;
+    border: 1px solid white;
     margin-bottom: 1rem;
   }
   

@@ -18,7 +18,7 @@ const Prompts = () => {
         <div>
 
             <div class="prompt-container">
-                <h2>Which is your date preference?</h2>
+                <h2 class="prompt-question">Which is your date preference?</h2>
                 <Prompt answers={answers} setAnswers={setAnswers} promptNumber={promptNumber} setPromptNumber={setPromptNumber} optionOne={options[promptNumber].optionOne} optionTwo={options[promptNumber].optionTwo} />
             </div>
 
