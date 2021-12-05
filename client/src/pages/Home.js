@@ -44,20 +44,20 @@ const Home = () => {
                 <h2 class="login-text">Login to your account</h2>
                 <form class="login-form">
                     <label for="username-login">Username</label>
-                    <input 
-                        type="text" 
-                        class="username-login" 
-                        id="username-login" 
-                        placeholder="Username" 
+                    <input
+                        type="text"
+                        class="username-login"
+                        id="username-login"
+                        placeholder="Username"
                         name="username"
                         value={userData.username}
                         onChange={handleInputChange}
                     />
                     <label for="password-login">Password</label>
-                    <input 
-                        type="password" 
-                        class="password-login" 
-                        id="password-login" 
+                    <input
+                        type="password"
+                        class="password-login"
+                        id="password-login"
                         placeholder="Password"
                         name="password"
                         value={userData.password}
@@ -74,8 +74,7 @@ const Home = () => {
                     <button className="btn btn-lg btn-danger signup-button">Click here to sign up for an account. It's free!</button>
                 </Link>
             </div>
-            {/* <img class="logo"></img> */}
-            <h3 class="slogan">CATCHY SLOGAN HERE</h3>
+
         </div>
     )
 

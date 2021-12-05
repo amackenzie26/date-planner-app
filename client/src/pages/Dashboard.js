@@ -15,8 +15,7 @@ const Dashboard = () => {
 
                     </div>
                 </div>
-                <img class="logo"></img>
-                <h3 class="slogan">CATCHY SLOGAN HERE</h3>
+
             </div>
 
         </div>

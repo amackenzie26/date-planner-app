@@ -14,6 +14,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Prompt from "../components/Prompt"
 
 const Date = () => {
 
@@ -22,53 +23,11 @@ const Date = () => {
     return (
         <div>
 
-            <div class="date-prompts">
-                <div class="prompt-card card">
-                    <h2 class="prompt-question">What is your date preference?</h2>
-                    <button class="option-one">Formal</button>
-                    <button class="option-two">Informal</button>
-                </div>
-                <div class="prompt-card card">
-                    <h2 class="prompt-question">What is your date preference?</h2>
-                    <button class="option-one">Outdoor</button>
-                    <button class="option-two">Indoor</button>
-                </div>
-                <div class="prompt-card card">
-                    <h2 class="prompt-question">What is your date preference?</h2>
-                    <button class="option-one">Active</button>
-                    <button class="option-two">Relaxed</button>
-                </div>
-                <div class="prompt-card card">
-                    <h2 class="prompt-question">What is your date preference?</h2>
-                    <button class="option-one">Daytime</button>
-                    <button class="option-two">Nighttime</button>
-                </div>
+            <div class="prompt-container">
+                { }
             </div>
 
-            <div class="idea-container">
-                <div class="suggestion-container">
-                    <h2 class="suggested-dates">Our Suggestions:</h2>
-                    <div class="card suggestion-card">
-                        <h3 class="activity-name">***********************************</h3>
-
-
-                    </div>
-                    <div class="card suggestion-card">
-                        <h3 class="activity-name">***********************************</h3>
-
-                    </div>
-                    <div class="card suggestion-card">
-                        <h3 class="activity-name">***********************************</h3>
-
-                    </div>
-
-                </div>
-
-
-                <h3 class="slogan">CATCHY SLOGAN HERE</h3>
-            </div>
-
-        </div>
+        </div >
     )
 
 }
