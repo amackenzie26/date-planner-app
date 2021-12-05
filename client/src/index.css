@@ -361,6 +361,24 @@
     font-size: 16px;
     color: #1a1a1a;
   }
+
+  .welcome {
+    margin-bottom: 60px;
+    display: block;
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .login-text {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .login-font {
+    font-family: 'Times New Roman', Times, serif;
+  }
   
   h1,
   h2,
@@ -423,6 +441,9 @@
   textarea,
   button {
     margin: 0;
+    margin-bottom: 3px;
+    margin-left: 130px;
+    text-align: center;
   }
   
   a {
@@ -923,7 +944,7 @@
   
   /* BACKGROUND UTILS */
   .bg-primary {
-    background-color: #2d3e50 !important;
+    background-color: FBF5F3 !important;
   }
   
   .bg-info {
@@ -980,14 +1001,19 @@
     display: block;
     padding: 0.5rem 1.2rem;
     margin: 0;
+    margin-bottom: 3px;
     text-decoration: none;
     font-size: 1rem;
     border-radius: 0.3rem;
     border: 1px solid transparent;
     outline: none;
-    color: #1a1a1a;
+    color: white;
     background-color: #aeaeae;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+
+  .submit-button {
+    margin-left: 180px;
   }
   
   .btn:hover {
@@ -1024,7 +1050,7 @@
   }
   
   .btn.btn-danger {
-    background-color: #e64c66;
+    background-color: #7B0828;
     color: #ffffff;
   }
   
@@ -1113,6 +1139,14 @@
   .card.card-rounded .card-header {
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   }
+
+  .card-login {
+    border-radius: 5px;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+  }
   
   form {
     width: 100%;
@@ -1150,9 +1184,10 @@
   
   form label,
   form .form-label {
+    text-align: center;
     display: block;
     font-size: 1.2rem;
-    margin: 0.625rem 0 0.25rem 0.3rem;
+    margin-right: 95px;
   }
   
   form .form-input {
