@@ -8,7 +8,7 @@ const Prompt = (props) => {
         props.setAnswers([...props.answers, e.target.getAttribute("data-option")])
 
         if (props.promptNumber + 1 > 3) {
-            history.push({ pathname: "/Suggestions", state: props.answers })
+            history.push({ pathname: "/Suggestions", state: [...props.answers, e.target.getAttribute("data-option")] })
         } else {
             props.setPromptNumber(props.promptNumber + 1);
         }
@@ -16,8 +16,8 @@ const Prompt = (props) => {
 
     return (
         <div class="prompt-card card">
-            <button onClick={handleButton} class="option-one" data-option={props.optionOne} >{props.optionOne}</button>
-            <button onClick={handleButton} class="option-two" data-option={props.optionTwo}>{props.optionTwo}</button>
+            <button onClick={handleButton} class="option-one" data-option={props.optionOne.name}>{props.optionOne.name}</button>
+            <button onClick={handleButton} class="option-two" data-option={props.optionTwo.name}>{props.optionTwo.name}</button>
         </div>
     )
 }
