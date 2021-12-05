@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import Prompt from "../components/Prompt"
 
 const Prompts = () => {
+
+    const [promptNumber, setPromptNumber] = useState(0);
 
     const options = [
         { optionOne: "formal", optionTwo: "informal" },
@@ -11,18 +12,14 @@ const Prompts = () => {
         { optionOne: "daytime", optionTwo: "nighttime" }
     ]
 
-    var prompts = [];
-
-    for (var i = 0; i < options.length; i++) {
-        prompts.push(<Prompt optionOne={options[i].optionOne} optionTwo={options[i].optionTwo} />)
-    }
+    const [answers, setAnswers] = useState([]);
 
     return (
         <div>
 
             <div class="prompt-container">
                 <h2>Which is your date preference?</h2>
-                {prompts}
+                <Prompt answers={answers} setAnswers={setAnswers} promptNumber={promptNumber} setPromptNumber={setPromptNumber} optionOne={options[promptNumber].optionOne} optionTwo={options[promptNumber].optionTwo} />
             </div>
 
         </div >
