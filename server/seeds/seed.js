@@ -1,6 +1,6 @@
 const db = require('../config/connection');
 const { User, Dates, Activity } = require('../models');
-const { } = require('../images');
+
 
 const users = [
     {
