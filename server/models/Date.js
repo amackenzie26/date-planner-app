@@ -1,25 +1,34 @@
 const { Schema, model } = require('mongoose');
 
 const dateSchema = new Schema({
-    date: {
-        type: Date,
-        required: true,
-    },
     title: {
         type: String,
         required: true,
     },
-    partner: {
+    message: {
+        type: String,
+        required: true,
+    },
+    partnerEmail: {
         type: String,
         required: true,
         match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
     },
+    // user: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'User',
+    // },
     activity: {
-        type: String
+        type: Schema.Types.ObjectId,
+        ref: 'Activity',
+    },
+     //update to tie to Activity model!?
+    date: {
+        type: Date,
+        default: Date.now
     }
-    //update to tie to Activity model!?
+   
 });
-
 
 const Dates = model('Date', dateSchema);
 

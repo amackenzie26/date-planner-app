@@ -18,3 +18,7 @@ export function checkPasswordsMatch(password, confirmPassword) {
     }
     return false;
 }
+
+export function formatDate(date) {
+  return date.toLocaleDateString();
+}
