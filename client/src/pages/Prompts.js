@@ -31,6 +31,7 @@ const Prompts = () => {
         ],
 
     ]
+    
     const [answers, setAnswers] = useState([]);
 
     return (

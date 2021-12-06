@@ -9,6 +9,10 @@ const activitySchema = new Schema({
     },
     image: {
         type: String
+    },
+    term: {
+        type: String,
+        required: true
     }
 });
 
