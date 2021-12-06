@@ -4,12 +4,7 @@ import { checkPassword, validateEmail, checkPasswordsMatch } from '../utils/help
 import { createUser } from '../utils/api';
 
 const Signup = () => {
-
-    // const [username, setUsername] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [firstname, setFirstname] = useState('');
-    // const [lastname, setLastname] = useState('');
-    // const [password, setPassword] = useState('');
+    
     const [confirmPassword, setConfirmPassword] = useState('');
     const [userData, setUserData] = useState({
         username: '',
@@ -32,24 +27,6 @@ const Signup = () => {
             setUserData({ ...userData, [name]: value })
         }
 
-        // const { target } = e;
-        // const inputType = target.name;
-        // const inputValue = target.value;
-
-        // if (inputType === 'username') {
-        //     setUsername(inputValue);
-        // }
-        // else if (inputType === 'email') {
-        //     setEmail(inputValue);
-        // } else if (inputType === 'firstname') {
-        //     setFirstname(inputValue);
-        // } else if (inputType === 'lastname') {
-        //     setLastname(inputValue);
-        // } else if (inputType === 'password') {
-        //     setPassword(inputValue);
-        // } else if (inputType === 'confirmPassword') {
-        //     setConfirmPassword(inputValue);
-        // }
     };
 
     const handleFormSubmit = async (e) => {

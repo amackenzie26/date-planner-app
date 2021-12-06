@@ -26,3 +26,12 @@ export const getAllSuggestions = () => {
         },
     })
 }
+
+export const getSuggestion = (id) => {
+    return fetch(`/api/suggestion/${id}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+}

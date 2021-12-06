@@ -1855,3 +1855,11 @@
   .prompt-card button {
     margin: 30px;
   }
+
+  .date-email, .date-message {
+    width: 100%;
+    text-align: left;
+  }
+  #label-date-email, #label-date-message {
+    text-align: left;
+  }

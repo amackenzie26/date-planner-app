@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Prompts from './pages/Prompts';
 import Suggestions from './pages/Suggestions';
 import Signup from './pages/Signup';
+import Activity from './pages/Activity';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/prompts" component={Prompts} />
         <Route exact path="/suggestions" component={Suggestions} />
+        <Route exact path="/suggestions/:id" component={Activity} />
+
       </div>
     </Router>
   );
