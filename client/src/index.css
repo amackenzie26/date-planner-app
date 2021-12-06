@@ -1038,6 +1038,7 @@
   
   /* BACKGROUND UTILS */
   .bg-primary {
+    --bs-bg-opacity: 0;
     background-color: FBF5F3 !important;
   }
   
