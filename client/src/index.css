@@ -462,6 +462,16 @@
 
   .login-font {
     font-family: 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .username-login {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .login-form {
+    text-align: center;
   }
   
   h1,
