@@ -1209,7 +1209,7 @@
   
   .card {
     border: 1px solid white;
-    margin-bottom: 1rem;
+    margin: 1rem;
   }
   
   .card .card-header {
@@ -1279,13 +1279,13 @@
   
   form label,
   form .form-label {
-    text-align: center;
+    /* text-align: center; */
     display: block;
     font-size: 1.2rem;
     margin-right: 95px;
   }
   
-  form .form-input {
+  form input {
     width: 100%;
     padding: 0.75rem;
     color: #1a1a1a;
@@ -1863,4 +1863,45 @@
   }
   #label-date-email, #label-date-message {
     text-align: left;
+  }
+
+  .submit-button, .signup-button {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  #username-login, #password-login {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 700px) {
+    .prompt-card {
+      flex-direction: row;
+    }
+  }
+
+  .logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lightblue;
+  }
+
+  .suggestion-button {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    background-color: cyan;
+  }
+
+  .next-suggestion {
+    margin: 0 auto;
+  }
+  
+  .date-card {
+    border: 1px solid rgba(0,0,0,.125) !important;
   }
