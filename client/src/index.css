@@ -29,23 +29,35 @@
   }
 
   .dashboard-link {
-    margin-left: 830px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     color: #FBF5F3;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .calendar-link {
-    margin-right: 10px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
     color: #FBF5F3;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .logout-link {
-    margin-right: 10px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
     font-style: italic;
     color: #FBF5F3;
     font-family: 'Times New Roman', Times, serif;
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    
   }
   
   /* Sections
@@ -255,11 +267,14 @@
     background-image: url(https://i.insider.com/5acbcd3f7708e94b4d7e47e4?width=600&format=jpeg&auto=webp);
     background-size: cover; 
     color: white;
-    font-size: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
     border-radius: 5px;
     padding: 150px;
     justify-content: center;
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
     /* margin-left: -240px !important; */
     filter: drop-shadow(10px 10px 4px #8DAA9D)
   }
@@ -268,11 +283,14 @@
     background-image: url(https://www.lovepanky.com/wp-content/uploads/2019/10/casual-first-date-ideas.jpg);
     background-size: cover; 
     color: white;
-    font-size: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 40px;
     border-radius: 5px;
     padding: 150px;
     justify-content: center;
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
     filter: drop-shadow(10px 10px 4px #8DAA9D)
   }
 
@@ -444,6 +462,16 @@
 
   .login-font {
     font-family: 'Times New Roman', Times, serif;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .username-login {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .login-form {
+    text-align: center;
   }
   
   h1,
