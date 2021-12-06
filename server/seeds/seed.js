@@ -41,7 +41,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'parks'
     },
     {
         name: 'Hiking',
@@ -51,7 +52,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'hiking'
     },
     {
         name: 'Movie',
@@ -61,7 +63,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'cinema'
     },
     {
         name: 'Bowling',
@@ -71,7 +74,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'bowling'
     },
     {
         name: 'Art Gallery',
@@ -82,7 +86,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'galleries'
     },
     {
         name: 'Museum',
@@ -93,7 +98,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'museums'
     },
     {
         name: 'Amusement Park',
@@ -103,7 +109,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'amusementparks'
     },
     {
         name: 'Surfing',
@@ -112,7 +119,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'surfing'
     },
     {
         name: 'Skiing',
@@ -121,7 +129,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'skiing'
     },
     {
         name: 'Paint and Sip',
@@ -132,7 +141,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'paintandsip'
     },
     {
         name: 'Private Chef',
@@ -143,7 +153,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'personalchefs'
     },
     {
         name: 'Cooking Lesson',
@@ -154,7 +165,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'cookingclasses'
     },
     {
         name: 'Concert',
@@ -165,7 +177,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'musicvenues'
     },
     {
         name: 'Club',
@@ -174,7 +187,8 @@ const activities = [
             'indoors',
             'active',
             'nighttime'
-        ]
+        ],
+        term: 'danceclubs'
     },
     {
         name: 'Bar',
@@ -183,7 +197,8 @@ const activities = [
             'indoors',
             'relaxed',
             'nighttime'
-        ]
+        ],
+        term: 'bars'
     },
     {
         name: 'Volleyball',
@@ -193,7 +208,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'volleyball'
     },
     {
         name: 'Boat Tour',
@@ -203,7 +219,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'boating'
     },
     {
         name: 'Casino',
@@ -213,7 +230,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'casinos'
     },
     {
         name: 'Take a Walk',
@@ -223,7 +241,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'hiking'
     },
     {
         name: 'Star Gazing',
@@ -232,7 +251,8 @@ const activities = [
             'outdoors',
             'relaxed',
             'nighttime'
-        ]
+        ],
+        term: 'parks'
     },
     {
         name: 'Rock Climbing',
@@ -241,7 +261,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'rock_climbing'
     },
     {
         name: 'Ax Throwing',
@@ -251,7 +272,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'axethrowing'
     },
     {
         name: 'Golfing',
@@ -260,7 +282,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'golf'
     },
     {
         name: 'Mini Golf',
@@ -269,7 +292,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'mini_golf'
     },
     {
         name: 'Comedy Show',
@@ -280,18 +304,19 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'comedyclubs'
     },
     {
-        name: 'Poetry Reading',
+        name: 'Astrology Reading',
         characteristics: [
             'informal',
-            'formal',
             'indoors',
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'psychic_astrology'
     },
     {
         name: 'Coffee',
@@ -301,7 +326,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'coffee'
     },
     {
         name: 'Beach',
@@ -311,7 +337,9 @@ const activities = [
             'relaxed',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'beaches'
+
     },
     {
         name: 'Fitness Class',
@@ -322,7 +350,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'fitness'
     },
     {
         name: 'Dance Lesson',
@@ -333,7 +362,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'dancestudio'
     },
     {
         name: 'Brunch',
@@ -343,7 +373,8 @@ const activities = [
             'indoors',
             'relaxed',
             'daytime'
-        ]
+        ],
+        term: 'breakfast_brunch'
     },
     {
         name: 'Dinner Out',
@@ -353,7 +384,8 @@ const activities = [
             'indoors',
             'relaxed',
             'nighttime'
-        ]
+        ],
+        term: 'restaurants'
     },
     {
         name: 'Lunch Out',
@@ -363,7 +395,8 @@ const activities = [
             'indoors',
             'relaxed',
             'daytime'
-        ]
+        ],
+        term: 'restaurants'
     },
     {
         name: 'Breakfast Out',
@@ -372,7 +405,8 @@ const activities = [
             'indoors',
             'relaxed',
             'daytime'
-        ]
+        ],
+        term: 'breakfast_brunch'
     },
     {
         name: 'Sporting Event',
@@ -384,7 +418,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'sportsteams'
     },
     {
         name: 'Go to a Play',
@@ -395,7 +430,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'theater'
     },
     {
         name: 'Go to a Show',
@@ -406,7 +442,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'theater'
     },
     {
         name: 'Opera',
@@ -417,7 +454,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'opera'
     },
     {
         name: 'Karaoke',
@@ -427,7 +465,8 @@ const activities = [
             'relaxed',
             'active',
             'nighttime'
-        ]
+        ],
+        term: 'karaoke'
     },
     {
         name: 'Hookah Bar',
@@ -437,7 +476,8 @@ const activities = [
             'relaxed',
             'active',
             'nighttime'
-        ]
+        ],
+        term: 'hookah_bars'
     },
     {
         name: 'Spa',
@@ -448,17 +488,18 @@ const activities = [
             'relaxed',
             'nighttime',
             'daytime'
-        ]
+        ],
+        term: 'spas'
     },
     {
-        name: 'Ice Skating',
+        name: 'Kayaking',
         characteristics: [
             'informal',
             'outdoors',
             'active',
-            'daytime',
-            'nighttime'
-        ]
+            'daytime'
+        ],
+        term: 'rafting'
     },
     {
         name: 'Skate Rink',
@@ -467,7 +508,8 @@ const activities = [
             'indoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'skatingrinks'
     },
     {
         name: 'Paintball',
@@ -477,7 +519,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'paintball'
     },
     {
         name: 'Go Karts',
@@ -487,7 +530,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime'
-        ]
+        ],
+        term: 'gokarts'
     },
     {
         name: 'Hotel Stay',
@@ -497,7 +541,8 @@ const activities = [
             'indoors',
             'relaxed',
             'nighttime'
-        ]
+        ],
+        term: 'hotels'
     },
     {
         name: 'Site Seeing',
@@ -509,7 +554,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'landmarks'
     },
     {
         name: 'Shopping',
@@ -519,7 +565,8 @@ const activities = [
             'active',
             'relaxed',
             'daytime',
-        ]
+        ],
+        term: 'shopping'
     },
     {
         name: 'Ice Cream',
@@ -530,7 +577,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'icecream'
     },
     {
         name: 'Biking',
@@ -539,18 +587,20 @@ const activities = [
             'outdoors',
             'active',
             'daytime',
-        ]
+        ],
+        term: 'mountainbiking'
     },
     {
-        name: 'Take A Drive',
+        name: 'Escape Room',
         characteristics: [
             'informal',
             'indoors',
-            'outdoors',
             'relaxed',
+            'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'escapegames'
     },
     {
         name: 'Shooting Range',
@@ -560,7 +610,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime',
-        ]
+        ],
+        term: 'gun_ranges'
     },
     {
         name: 'Skydiving',
@@ -569,7 +620,8 @@ const activities = [
             'outdoors',
             'active',
             'daytime',
-        ]
+        ],
+        term: 'skydiving'
     },
     {
         name: 'Zoo',
@@ -579,7 +631,8 @@ const activities = [
             'relaxed',
             'active',
             'daytime',
-        ]
+        ],
+        term: 'zoos'
     },
     {
         name: 'Farm Festivities',
@@ -589,7 +642,8 @@ const activities = [
             'relaxed',
             'active',
             'daytime',
-        ]
+        ],
+        term: 'attractionfarms'
     },
     {
         name: 'Watch Sunrise',
@@ -598,7 +652,8 @@ const activities = [
             'outdoors',
             'relaxed',
             'daytime',
-        ]
+        ],
+        term: 'beaches'
     },
     {
         name: 'Watch Sunset',
@@ -607,7 +662,8 @@ const activities = [
             'outdoors',
             'relaxed',
             'nighttime',
-        ]
+        ],
+        term: 'beaches'
     },
     {
         name: 'Wine Tasting',
@@ -618,7 +674,8 @@ const activities = [
             'indoors',
             'relaxed',
             'daytime',
-        ]
+        ],
+        term: 'wineries'
     },
     {
         name: 'Brewery/Tasting',
@@ -629,7 +686,8 @@ const activities = [
             'relaxed',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'breweries'
     },
     {
         name: 'Bar Crawl',
@@ -641,7 +699,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'barcrawl'
     },
     {
         name: 'Camping',
@@ -652,7 +711,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'campgrounds'
     },
     {
         name: 'Arcade',
@@ -663,7 +723,8 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'arcades'
     },
     {
         name: 'Lake Trip',
@@ -674,7 +735,77 @@ const activities = [
             'active',
             'daytime',
             'nighttime'
-        ]
+        ],
+        term: 'lakes'
+    },
+    {
+        name: 'Fishing',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime',
+            'nighttime'
+        ],
+        term: 'fishing'
+    },
+    {
+        name: 'Horseback Riding',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime',
+            'nighttime'
+        ],
+        term: 'horsebackriding'
+    },
+    {
+        name: 'Hot Air Balloon',
+        characteristics: [
+            'informal',
+            'formal',
+            'outdoors',
+            'relaxed',
+            'active',
+            'daytime',
+            'nighttime'
+        ],
+        term: 'hot_air_balloons'
+    },
+    {
+        name: 'Paragliding',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'active',
+            'daytime', '
+        ],
+        term: 'paragliding'
+    },
+    {
+        name: 'Tennis',
+        characteristics: [
+            'informal',
+            'outdoors',
+            'active',
+            'daytime'
+        ],
+        term: 'tennis'
+    },
+    {
+        name: 'Botanical Gardens',
+        characteristics: [
+            'informal',
+            'formal',
+            'outdoors',
+            'active',
+            'daytime',
+            'nightime'
+        ],
+        term: 'gardens'
     },
 ]
 
@@ -695,4 +826,3 @@ db.once('open', async () => {
     console.log('ACTIVITIES SEEDED!');
     process.exit(0);
 });
-

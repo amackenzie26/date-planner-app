@@ -74,6 +74,7 @@ const Home = () => {
                     <button className="btn btn-lg btn-danger signup-button">Click here to sign up for an account. It's free!</button>
                 </Link>
             </div>
+        
 
         </div>
     )

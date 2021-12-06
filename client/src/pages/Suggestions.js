@@ -59,6 +59,7 @@ const Suggestions = (props) => {
     }
 
     return (
+        <div>
         <div class="suggestion-container">
             { order < suggestionList.length  && <Suggestion sugg={suggestionList[order]} />}
             { order + 1 < suggestionList.length  && <Suggestion sugg={suggestionList[order + 1]} />}
@@ -66,6 +67,8 @@ const Suggestions = (props) => {
             
             <button class="next" onClick={handleSuggestions}>Next Suggestions</button>
         </div>
+
+    </div>
     )
 
 }

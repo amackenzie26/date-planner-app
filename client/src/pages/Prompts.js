@@ -24,6 +24,7 @@ const Prompts = () => {
         ],
 
     ]
+    
     const [answers, setAnswers] = useState([]);
 
     return (
@@ -35,7 +36,7 @@ const Prompts = () => {
                 <Prompt answers={answers} setAnswers={setAnswers} promptNumber={promptNumber} setPromptNumber={setPromptNumber} optionOne={options[promptNumber][0]} optionTwo={options[promptNumber][1]} />
 
             </div>
-
+            
         </div >
     )
 
