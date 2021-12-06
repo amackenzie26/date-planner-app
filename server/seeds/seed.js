@@ -1,6 +1,5 @@
 const db = require('../config/connection');
 const { User, Dates, Activity } = require('../models');
-const { } = require('../images');
 
 const users = [
     {
@@ -47,7 +46,7 @@ const activities = [
             'nighttime'
         ],
         term: 'parks',
-        image: '../../client/images/picnic.jpeg'
+        image: 'picnic.jpeg'
     },
     {
         name: 'Hiking',
@@ -59,7 +58,7 @@ const activities = [
             'nighttime'
         ],
         term: 'hiking',
-        image: 'client\images\hiking.jpg'
+        image: 'hiking.jpg'
     },
     {
         name: 'Movie',
@@ -70,7 +69,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'cinema'
+        term: 'cinema',
+        image: 'cinema.jpg'
     },
     {
         name: 'Bowling',
@@ -81,7 +81,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'bowling'
+        term: 'bowling',
+        image: 'bowling.jpg'
     },
     {
         name: 'Art Gallery',
@@ -93,7 +94,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'galleries'
+        term: 'galleries',
+        image: 'galleries.jpg'
     },
     {
         name: 'Museum',
@@ -105,7 +107,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'museums'
+        term: 'museums',
+        image: 'museums.jpg'
     },
     {
         name: 'Amusement Park',
@@ -116,7 +119,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'amusementparks'
+        term: 'amusementparks',
+        image: 'amusementparks.jpg'
     },
     {
         name: 'Surfing',
@@ -126,7 +130,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'surfing'
+        term: 'surfing',
+        image: 'surfing.jpg'
     },
     {
         name: 'Skiing',
@@ -136,7 +141,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'skiing'
+        term: 'skiing',
+        image: 'skiing.jpg'
     },
     {
         name: 'Paint and Sip',
@@ -148,7 +154,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'paintandsip'
+        term: 'paintandsip',
+        image: 'paintandsip.jpg'
     },
     {
         name: 'Private Chef',
@@ -160,7 +167,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'personalchefs'
+        term: 'personalchefs',
+        image: 'personalchefs.png'
     },
     {
         name: 'Cooking Lesson',
@@ -172,7 +180,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'cookingclasses'
+        term: 'cookingclasses',
+        image: 'cookingclasses.jpeg'
     },
     {
         name: 'Concert',
@@ -184,7 +193,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'musicvenues'
+        term: 'musicvenues',
+        image: 'musicvenues.jpg'
     },
     {
         name: 'Club',
@@ -194,7 +204,8 @@ const activities = [
             'active',
             'nighttime'
         ],
-        term: 'danceclubs'
+        term: 'danceclubs',
+        image: 'danceclubs.jpg'
     },
     {
         name: 'Bar',
@@ -204,7 +215,8 @@ const activities = [
             'relaxed',
             'nighttime'
         ],
-        term: 'bars'
+        term: 'bars',
+        image: 'bars.jpg'
     },
     {
         name: 'Volleyball',
@@ -215,7 +227,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'volleyball'
+        term: 'volleyball',
+        image: 'volleyball.jpg'
     },
     {
         name: 'Boat Tour',
@@ -226,7 +239,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'boating'
+        term: 'boating',
+        image: 'boating.jpg'
     },
     {
         name: 'Casino',
@@ -237,7 +251,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'casinos'
+        term: 'casinos',
+        image: 'casinos.jpg'
     },
     {
         name: 'Take a Walk',
@@ -248,7 +263,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'hiking'
+        term: 'hiking',
+        image: 'walk.jpg'
     },
     {
         name: 'Star Gazing',
@@ -258,7 +274,8 @@ const activities = [
             'relaxed',
             'nighttime'
         ],
-        term: 'parks'
+        term: 'parks',
+        image: 'stargazing.jpg'
     },
     {
         name: 'Rock Climbing',
@@ -268,7 +285,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'rock_climbing'
+        term: 'rock_climbing',
+        image: 'rockclimbing.jpg'
     },
     {
         name: 'Ax Throwing',
@@ -279,7 +297,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'axethrowing'
+        term: 'axethrowing',
+        image: 'axethrowing.jpg'
     },
     {
         name: 'Golfing',
@@ -289,7 +308,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'golf'
+        term: 'golf',
+        image: 'golf.jpg'
     },
     {
         name: 'Mini Golf',
@@ -299,7 +319,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'mini_golf'
+        term: 'mini_golf',
+        image: 'minigolf.jpg'
     },
     {
         name: 'Comedy Show',
@@ -311,7 +332,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'comedyclubs'
+        term: 'comedyclubs',
+        image: 'comedyclubs.jpg'
     },
     {
         name: 'Astrology Reading',
@@ -322,7 +344,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'psychic_astrology'
+        term: 'psychic_astrology',
+        image: 'astrology.jpg'
     },
     {
         name: 'Coffee',
@@ -333,7 +356,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'coffee'
+        term: 'coffee',
+        image: 'coffee.jpg'
     },
     {
         name: 'Beach',
@@ -344,7 +368,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'beaches'
+        term: 'beaches',
+        image: 'beaches.jpg'
 
     },
     {
@@ -357,7 +382,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'fitness'
+        term: 'fitness',
+        image: 'fitness.jpg'
     },
     {
         name: 'Dance Lesson',
@@ -369,7 +395,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'dancestudio'
+        term: 'dancestudio',
+        image: 'dance.jpg'
     },
     {
         name: 'Brunch',
@@ -380,7 +407,8 @@ const activities = [
             'relaxed',
             'daytime'
         ],
-        term: 'breakfast_brunch'
+        term: 'breakfast_brunch',
+        image: 'brunch.jpg'
     },
     {
         name: 'Dinner Out',
@@ -391,7 +419,8 @@ const activities = [
             'relaxed',
             'nighttime'
         ],
-        term: 'restaurants'
+        term: 'restaurants',
+        image: 'dinner.jpg'
     },
     {
         name: 'Lunch Out',
@@ -402,7 +431,8 @@ const activities = [
             'relaxed',
             'daytime'
         ],
-        term: 'restaurants'
+        term: 'restaurants',
+        image: 'lunch.jpg'
     },
     {
         name: 'Breakfast Out',
@@ -412,7 +442,8 @@ const activities = [
             'relaxed',
             'daytime'
         ],
-        term: 'breakfast_brunch'
+        term: 'breakfast_brunch',
+        image: 'breakfast.jpg'
     },
     {
         name: 'Sporting Event',
@@ -425,7 +456,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'sportsteams'
+        term: 'sportsteams',
+        image: 'sportsteams.jpg'
     },
     {
         name: 'Go to a Play',
@@ -437,7 +469,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'theater'
+        term: 'theater',
+        image: 'theater.jpg'
     },
     {
         name: 'Go to a Show',
@@ -449,7 +482,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'theater'
+        term: 'theater',
+        image: 'show.jpg'
     },
     {
         name: 'Opera',
@@ -461,7 +495,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'opera'
+        term: 'opera',
+        image: 'opera.jpg'
     },
     {
         name: 'Karaoke',
@@ -472,7 +507,8 @@ const activities = [
             'active',
             'nighttime'
         ],
-        term: 'karaoke'
+        term: 'karaoke',
+        image: 'karaoke.jpg'
     },
     {
         name: 'Hookah Bar',
@@ -483,7 +519,8 @@ const activities = [
             'active',
             'nighttime'
         ],
-        term: 'hookah_bars'
+        term: 'hookah_bars',
+        image: 'hookah.jpeg'
     },
     {
         name: 'Spa',
@@ -495,7 +532,8 @@ const activities = [
             'nighttime',
             'daytime'
         ],
-        term: 'spas'
+        term: 'spas',
+        image: 'spas.png'
     },
     {
         name: 'Kayaking',
@@ -505,7 +543,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'rafting'
+        term: 'rafting',
+        image: 'rafting.jpg'
     },
     {
         name: 'Skate Rink',
@@ -515,7 +554,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'skatingrinks'
+        term: 'skatingrinks',
+        image: 'skatingrinks.jpg'
     },
     {
         name: 'Paintball',
@@ -526,7 +566,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'paintball'
+        term: 'paintball',
+        image: 'paintball.jpg'
     },
     {
         name: 'Go Karts',
@@ -537,7 +578,8 @@ const activities = [
             'active',
             'daytime'
         ],
-        term: 'gokarts'
+        term: 'gokarts',
+        image: 'gokarts.jpg'
     },
     {
         name: 'Hotel Stay',
