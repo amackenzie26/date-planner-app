@@ -35,6 +35,18 @@
     font-family: 'Times New Roman', Times, serif;
   }
 
+  .favorites {
+    color: black !important;
+  }
+
+  .card-title {
+    color: black !important;
+  }
+
+  .card-text {
+    color: black !important;
+  }
+
   .calendar-link {
     display: inline;
     margin-left: auto;
