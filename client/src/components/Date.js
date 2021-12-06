@@ -4,7 +4,7 @@ import { Card, Button } from "react-bootstrap";
 const Date = (props) => {
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <div class="card date-card" style={{ width: '18rem' }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
@@ -13,7 +13,7 @@ const Date = (props) => {
                 </Card.Text>
                 <Button variant="primary">Check</Button>
             </Card.Body>
-        </Card>
+        </div>
     )
 }
 

@@ -11,7 +11,7 @@ const Suggestion = (props) => {
 
     return (
         <div class="suggestion-card card">
-            <button class="option" key={props.sugg._id} onClick={handleSuggestion}>{props.sugg.name}</button>
+            <button class="suggestion-button" key={props.sugg._id} onClick={handleSuggestion}>{props.sugg.name}</button>
         </div>
     )
 }

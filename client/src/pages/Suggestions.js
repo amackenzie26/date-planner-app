@@ -64,10 +64,9 @@ const Suggestions = (props) => {
             { order < suggestionList.length  && <Suggestion sugg={suggestionList[order]} />}
             { order + 1 < suggestionList.length  && <Suggestion sugg={suggestionList[order + 1]} />}
             { order + 2 < suggestionList.length  && <Suggestion sugg={suggestionList[order + 2]} />}
-            
-            <button class="next" onClick={handleSuggestions}>Next Suggestions</button>
+        
         </div>
-
+        <button class="btn btn-danger next-suggestion" onClick={handleSuggestions}>Next Suggestions</button>
     </div>
     )
 
