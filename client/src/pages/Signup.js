@@ -82,7 +82,7 @@ const Signup = () => {
             <div class="card">
                 <h2 class="signup-text">Create an account:</h2>
                 <form class="signup-form form">
-                    <label for="username-signup">Username</label>
+                    <label htmlFor="username-signup">Username</label>
                     <input 
                         class="username-signup" 
                         id="username-signup"
@@ -92,7 +92,7 @@ const Signup = () => {
                         onChange={handleInputChange}
                     />
                     
-                    <label for="firstname-signup">First Name</label>
+                    <label htmlFor="firstname-signup">First Name</label>
                     <input 
                         class="firstname-signup" 
                         id="firstname-signup" 
@@ -102,7 +102,7 @@ const Signup = () => {
                         onChange={handleInputChange}
                     />
 
-                    <label for="lastname-signup">Last Name</label>
+                    <label htmlFor="lastname-signup">Last Name</label>
                     <input 
                         class="lastname-signup" 
                         id="lastname-signup" 
@@ -112,7 +112,7 @@ const Signup = () => {
                         onChange={handleInputChange}
                     />
 
-                    <label for="email-signup">Email</label>
+                    <label htmlFor="email-signup">Email</label>
                     <input 
                         class="email-signup" 
                         id="email-signup" 
@@ -122,7 +122,7 @@ const Signup = () => {
                         onChange={handleInputChange}
                     />
 
-                    <label for="password-signup">Password</label>
+                    <label htmlFor="password-signup">Password</label>
                     <input 
                         class="password-signup" 
                         id="password-signup" 
@@ -132,7 +132,7 @@ const Signup = () => {
                         onChange={handleInputChange}
                     />
 
-                    <label for="confirm-password-signup">Confirm Password</label>
+                    <label htmlFor="confirm-password-signup">Confirm Password</label>
                     <input 
                         class="confirm-password-signup" 
                         id="confirm-password-signup" 

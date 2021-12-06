@@ -11,26 +11,29 @@ const users = [
     }
 ]
 
-// const dates = [
-//     {
-//         date: '12/12/21',
-//         title: 'Date with Cher',
-//         partner: 'therealcher57@gmail.com',
-//         activity: 'rollerblading'
-//     },
-//     {
-//         date: '12/15/21',
-//         title: 'Date with Tatiana',
-//         partner: 'tatitats@gmail.com',
-//         activity: 'bar crawl'
-//     },
-//     {
-//         date: '12/16/21',
-//         title: 'Date with Griselda',
-//         partner: 'thegriswhostolexmas@gmail.com',
-//         activity: 'museum'
-//     }
-// ]
+const dates = [
+    {
+        date: '12/12/21',
+        title: 'Date with Cher',
+        message: 'Hope we have some fun',
+        partnerEmail: 'therealcher57@gmail.com',
+        activity: '61ae4b3482c9e9574c22a8b1'
+    },
+    {
+        date: '12/15/21',
+        title: 'Date with Tatiana',
+        message: 'Hope we have a blast',
+        partnerEmail: 'tatitats@gmail.com',
+        activity: '61ae4b3482c9e9574c22a8b1'
+    },
+    {
+        date: '12/16/21',
+        title: 'Date with Griselda',
+        message: 'Nothing serious',
+        partnerEmail: 'thegriswhostolexmas@gmail.com',
+        activity: '61ae4b3482c9e9574c22a8b1'
+    }
+]
 
 const activities = [
     {
@@ -781,7 +784,7 @@ const activities = [
             'informal',
             'outdoors',
             'active',
-            'daytime', '
+            'daytime',
         ],
         term: 'paragliding'
     },
@@ -815,10 +818,10 @@ db.once('open', async () => {
 
     console.log('USERS SEEDED!');
 
-    // await Dates.deleteMany({});
-    // await Dates.insertMany(dates);
+    await Dates.deleteMany({});
+    await Dates.insertMany(dates);
 
-    // console.log('DATES SEEDED!');
+    console.log('DATES SEEDED!');
 
     await Activity.deleteMany({});
     await Activity.insertMany(activities);
