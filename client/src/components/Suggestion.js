@@ -1,10 +1,17 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Suggestion = (props) => {
 
+    const history = useHistory();
+
+    const handleSuggestion = () => {
+        history.push(`/suggestions/${props.sugg._id}`)
+    }
+
     return (
         <div class="suggestion-card card">
-            <button class="option">{props.sugg.name}</button>
+            <button class="option" key={props.sugg._id} onClick={handleSuggestion}>{props.sugg.name}</button>
         </div>
     )
 }

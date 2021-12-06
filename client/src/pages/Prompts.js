@@ -5,13 +5,6 @@ const Prompts = () => {
 
     const [promptNumber, setPromptNumber] = useState(0);
 
-    // const options = [
-    //     { optionOne: "formal", optionTwo: "informal" },
-    //     { optionOne: "outdoors", optionTwo: "indoors" },
-    //     { optionOne: "active", optionTwo: "relaxed" },
-    //     { optionOne: "daytime", optionTwo: "nighttime" }
-    // ]
-
     const options = [
         [ 
             {name: "formal", backgroundImage: 'https://i.insider.com/5acbcd3f7708e94b4d7e47e4?width=600&format=jpeg&auto=webp'},
