@@ -9,7 +9,7 @@ const Prompt = (props) => {
         props.setAnswers([...props.answers, e.target.getAttribute("data-option")])
 
         if (props.promptNumber + 1 > 3) {
-            history.push({ pathname: "/Suggestions", state: [...props.answers, e.target.getAttribute("data-option")] })
+            history.push({ pathname: "/suggestions", state: [...props.answers, e.target.getAttribute("data-option")] })
         } else {
             props.setPromptNumber(props.promptNumber + 1);
         }

@@ -1,7 +1,10 @@
 import React, { useEffect, useState }  from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { getSuggestion } from '../utils/api';
 import { Modal, Button } from "react-bootstrap";
+import { validateEmail } from '../utils/helpers';
+import { createDate } from '../utils/api';
+import { formatDate } from '../utils/helpers';
 
 const Activity = (props) => {
     const [suggestion, setSuggestion] = useState([]);
@@ -13,9 +16,16 @@ const Activity = (props) => {
     const handleShow = () => setShow(true);
 
     const [dateInfo, setDateInfo] = useState({
-        email: '',
+        title: '',
+        partnerEmail: '',
         message: '',
+        activity: id,
+        date: formatDate(new Date()),
     });
+
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const history = useHistory();
 
     useEffect(() => {
         const getSuggestionInfo = async () => {
@@ -41,6 +51,34 @@ const Activity = (props) => {
 
         setDateInfo({ ...dateInfo, [name]: value })
     }
+
+    const handleInputSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!validateEmail(dateInfo.partnerEmail)) {
+            setErrorMessage('Email is invalid');
+            return;
+        }
+
+        console.log(dateInfo);
+        try {
+            const res = await createDate(dateInfo);
+            const date = await res.json();
+            console.log(date);
+            if (!res.ok) {
+                console.log('error');
+                throw new Error(`Couldn't create date`);
+            }
+
+            history.push('/dashboard')
+        } catch (err) {
+            console.error(err);
+        }
+        
+
+
+    }
+
     return (
         <div>
             {!suggestion ? (
@@ -58,38 +96,50 @@ const Activity = (props) => {
       </Button>
 
       <Modal show={show} onHide={handleClose}>
-      <form class="form">
         <Modal.Header closeButton>
           <Modal.Title>Send invitation to your date</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        
-            <label for="date-email" id="label-date-email">Date's email</label>
+            <label htmlFor="date-title" id="label-date-title">Date's title</label>
+                <input 
+                    className="date-title" 
+                    id="date-title"
+                    name="title"
+                    type="text"
+                    value={dateInfo.title}
+                    onChange={handleInputChange}
+                />
+
+            <label htmlFor="date-email" id="label-date-email">Date's email</label>
             <input 
-                class="date-email" 
+                className="date-email" 
                 id="date-email"
-                name="email"
+                name="partnerEmail"
                 type="email"
-                value={dateInfo.email}
+                value={dateInfo.partnerEmail}
                 onChange={handleInputChange}
             />
 
-            <label for="date-message" id="label-date-message">Message</label>
+            <label htmlFor="date-message" id="label-date-message">Message</label>
             <textarea 
-                class="date-message" 
+                className="date-message" 
                 id="date-message"
                 name="message"
                 value={dateInfo.message}
                 onChange={handleInputChange}
             />
-        
+
+            {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+            )}
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleInputSubmit}>
             Create
           </Button>
         </Modal.Footer>
-        </form>
       </Modal>
       </div>
         </div>

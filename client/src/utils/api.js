@@ -35,3 +35,22 @@ export const getSuggestion = (id) => {
         },
     })
 }
+
+export const createDate = (dateInfo) => {
+    return fetch('/api/date', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dateInfo),
+    });
+}
+
+export const getAllDates = () => {
+    return fetch('/api/date', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+}
