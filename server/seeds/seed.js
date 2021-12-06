@@ -1,5 +1,6 @@
 const db = require('../config/connection');
 const { User, Dates, Activity } = require('../models');
+const { } = require('../images');
 
 const users = [
     {
@@ -45,7 +46,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'parks'
+        term: 'parks',
+        image: '../../client/images/picnic.jpeg'
     },
     {
         name: 'Hiking',
@@ -56,7 +58,8 @@ const activities = [
             'daytime',
             'nighttime'
         ],
-        term: 'hiking'
+        term: 'hiking',
+        image: 'client\images\hiking.jpg'
     },
     {
         name: 'Movie',
