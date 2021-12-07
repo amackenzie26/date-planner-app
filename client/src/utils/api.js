@@ -79,24 +79,16 @@ export const getNearbyPlaces = (searchTerm) => {
 
     if (currentLat == null && currentLon == null) {
         getLocation();
-    } else {
-        var url =
-            "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + searchTerm + "&latitude=" + currentLat + "&longitude=" + currentLon;
-
-        fetch(url, {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                Authorization: "Bearer " + yelpApiKey,
-            },
-        }).then(function (response) {
-            if (response.ok) {
-                response.json().then(function (data) {
-                    console.log(data);
-                    //displayNearbyPlaces(data.businesses);
-                });
-            }
-        });
     }
+
+    var url ="https://api.yelp.com/v3/businesses/search?term=" + searchTerm + "&latitude=" + currentLat + "&longitude=" + currentLon;
+
+    fetch(url, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + yelpApiKey,
+        },
+    })
 
 }
