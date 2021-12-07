@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { authenticateUser } from '../utils/api';
-
+import Auth from '../utils/auth';
 const Home = () => {
 
     const [userData, setUserData] = useState({
@@ -30,7 +30,9 @@ const Home = () => {
 
             const user = await res.json();
             console.log(user);
-            history.push('/dashboard');
+
+            Auth.login(user.token);
+            //history.push('/dashboard');
         } catch (err) {
             console.error(err);
         }

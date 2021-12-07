@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
     "express": "^4.17.1",
     "mongoose": "^5.11.6",
     "graphql": "^15.5.1"
