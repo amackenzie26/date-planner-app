@@ -21,7 +21,7 @@ https://github.com/amackenzie26/date-planner-app/blob/main/client/public/images/
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - to create elements
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - to style the html elements
 * [Javascript](https://www.javascript.com/) - to create actions on the page
-* [React]()
+* [React](https://reactjs.org/) - For design and functionality
 * [MongoDB]
 * [Git](https://git-scm.com/) - to track changes and push commits
 * [GitHub](github.com) - to host the repository and deploy with GitHub pages
