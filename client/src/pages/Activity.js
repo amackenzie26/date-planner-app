@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { useParams, useHistory } from 'react-router-dom';
-import { getSuggestion } from '../utils/api';
+import { getNearbyPlaces, getSuggestion } from '../utils/api';
 import { Modal, Button } from "react-bootstrap";
 import { validateEmail } from '../utils/helpers';
 import { createDate } from '../utils/api';
 import { formatDate } from '../utils/helpers';
+import { getNearbyPlaces } from '../utils/api';
+
+
+
 
 const Activity = (props) => {
     const [suggestion, setSuggestion] = useState([]);
@@ -76,94 +80,104 @@ const Activity = (props) => {
             console.error(err);
         }
 
+        useEffect(() => {
+            try {
+                const term = await getNearbyPlaces(searchTerm);
+                if (!res.ok) {
+                    throw new Error('No places match your search');
+                }
+                const placesList = await res.json();
+            }
+
+//console.log(searchTerm)
+getNearbyPlaces(searchTerm);
 
 
-    }
+            return (
+                <div>
+                    {!suggestion ? (
+                        <div>Loading...</div>
+                    ) : (
+                        <h1>{suggestion.name}</h1>
+                    )}
 
-    return (
-        <div>
-            {!suggestion ? (
-                <div>Loading...</div>
-            ) : (
-                <h1>{suggestion.name}</h1>
-            )}
-
-            <div
-                className="d-flex align-items-center justify-content-center"
-                style={{ height: "100vh" }}
-            >
-                <Button variant="primary" onClick={handleShow}>
-                    Create Date
-                </Button>
-
-                <Modal show={show} onHide={handleClose}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Send invitation to your date</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <label htmlFor="date-title" id="label-date-title">Date's title</label>
-                        <input
-                            className="date-title"
-                            id="date-title"
-                            name="title"
-                            type="text"
-                            value={dateInfo.title}
-                            onChange={handleInputChange}
-                        />
-
-                        <label htmlFor="date-email" id="label-date-email">Date's email</label>
-                        <input
-                            className="date-email"
-                            id="date-email"
-                            name="partnerEmail"
-                            type="email"
-                            value={dateInfo.partnerEmail}
-                            onChange={handleInputChange}
-                        />
-
-                        <label htmlFor="date-message" id="label-date-message">Message</label>
-                        <textarea
-                            className="date-message"
-                            id="date-message"
-                            name="message"
-                            value={dateInfo.message}
-                            onChange={handleInputChange}
-                        />
-
-                        <div style={{
-                            margin: 'auto',
-                            display: 'block',
-                            width: 'fit-content'
-                        }}>
-                            <h4>When is your date?</h4>
-                            <TextField
-                                id="date"
-                                label="Choose the date"
-                                type="date"
-                                defaultValue="2021-12-07"
-                                InputLabelProps={{
-                                    shrink: true,
-                                }}
-                            />
-                        </div>
-
-                        {errorMessage && (
-                            <div>
-                                <p className="error-text">{errorMessage}</p>
-                            </div>
-                        )}
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="primary" onClick={handleInputSubmit}>
-                            Create
+                    <div
+                        className="d-flex align-items-center justify-content-center"
+                        style={{ height: "100vh" }}
+                    >
+                        <Button variant="primary" onClick={handleShow}>
+                            Create Date
                         </Button>
-                    </Modal.Footer>
-                </Modal>
-            </div>
-        </div>
+
+                        <Modal show={show} onHide={handleClose}>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Send invitation to your date</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <label htmlFor="date-title" id="label-date-title">Date's title</label>
+                                <input
+                                    className="date-title"
+                                    id="date-title"
+                                    name="title"
+                                    type="text"
+                                    value={dateInfo.title}
+                                    onChange={handleInputChange}
+                                />
+
+                                <label htmlFor="date-email" id="label-date-email">Date's email</label>
+                                <input
+                                    className="date-email"
+                                    id="date-email"
+                                    name="partnerEmail"
+                                    type="email"
+                                    value={dateInfo.partnerEmail}
+                                    onChange={handleInputChange}
+                                />
+
+                                <label htmlFor="date-message" id="label-date-message">Message</label>
+                                <textarea
+                                    className="date-message"
+                                    id="date-message"
+                                    name="message"
+                                    value={dateInfo.message}
+                                    onChange={handleInputChange}
+                                />
+
+                                <div style={{
+                                    margin: 'auto',
+                                    display: 'block',
+                                    width: 'fit-content'
+                                }}>
+                                    <h4>When is your date?</h4>
+                                    <TextField
+                                        id="date"
+                                        label="Choose the date"
+                                        type="date"
+                                        defaultValue="2021-12-07"
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                    />
+                                </div>
+
+                                {errorMessage && (
+                                    <div>
+                                        <p className="error-text">{errorMessage}</p>
+                                    </div>
+                                )}
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <Button variant="primary" onClick={handleInputSubmit}>
+                                    Create
+                                </Button>
+                            </Modal.Footer>
+                        </Modal>
+                    </div>
+
+                </div>
 
 
-    );
+            );
+        }
 }
-
-export default Activity;
+    export default Activity;

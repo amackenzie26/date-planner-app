@@ -1,3 +1,5 @@
+
+
 export const createUser = (userData) => {
     return fetch('/api/signup', {
         method: 'POST',
@@ -53,4 +55,48 @@ export const getAllDates = () => {
             'Content-Type': 'application/json',
         },
     })
+}
+
+var yelpApiKey = "XGPJzdsArujs0a5GBLbAgRXVjA0Ht8qthqX-MLFDM0pckAYtxRSmRcJCodfZ9Yxk9WsRQt7Isno_i1ZOlRrlEDY7laqvOLzkb23nclEnir1HfZkyAPxi8jOkwAZfYXYx";
+var currentLat;
+var currentLon;
+
+const getLocation = () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+}
+
+const showPosition = (position) => {
+    currentLat = position.coords.latitude;
+    currentLon = position.coords.longitude;
+    console.log("Lat:" + currentLat + ", Lon:" + currentLon);
+}
+
+export const getNearbyPlaces = (searchTerm) => {
+
+    if (currentLat == null && currentLon == null) {
+        getLocation();
+    } else {
+        var url =
+            "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + searchTerm + "&latitude=" + currentLat + "&longitude=" + currentLon;
+
+        fetch(url, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer " + yelpApiKey,
+            },
+        }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (data) {
+                    console.log(data);
+                    //displayNearbyPlaces(data.businesses);
+                });
+            }
+        });
+    }
+
 }
