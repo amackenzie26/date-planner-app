@@ -32,7 +32,7 @@ https://github.com/amackenzie26/date-planner-app/blob/main/client/public/images/
 
 
 ## See it in Action!
-* [](Enjoy!)
+* https://youtu.be/IM1a_k7H9ok
 
 ## Github Repo
 * https://github.com/amackenzie26/date-planner-app
