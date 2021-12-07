@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-
 const Suggestion = (props) => {
 
     const history = useHistory();
@@ -11,7 +10,7 @@ const Suggestion = (props) => {
 
     return (
         <div class="suggestion-card">
-            <button class="suggestion-button" key={props.sugg._id} onClick={handleSuggestion}>{props.sugg.name}</button>
+            <button style={{backgroundImage: `url('${process.env.PUBLIC_URL}/images/${props.sugg.image}')`}} class="suggestion-button" key={props.sugg._id} onClick={handleSuggestion}>{props.sugg.name}</button>
         </div>
     )
 }
