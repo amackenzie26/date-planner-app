@@ -16,9 +16,9 @@ const Prompt = (props) => {
     }
 
     return (
-        <div class="prompt-card card">
-            <button style={{backgroundImage: 'url(' + props.optionOne.backgroundImage + ')'}} onClick={handleButton} class="option-one" data-option={props.optionOne.name}>{props.optionOne.name}</button>
-            <button style={{backgroundImage: 'url(' + props.optionTwo.backgroundImage + ')'}} onClick={handleButton} class="option-two" data-option={props.optionTwo.name}>{props.optionTwo.name}</button>
+        <div class="prompt-card">
+            <button style={{backgroundImage: 'url(' + props.optionOne.backgroundImage + ')'}} onClick={handleButton} class="prompt-option option-one" data-option={props.optionOne.name}>{props.optionOne.name}</button>
+            <button style={{backgroundImage: 'url(' + props.optionTwo.backgroundImage + ')'}} onClick={handleButton} class="prompt-option option-two" data-option={props.optionTwo.name}>{props.optionTwo.name}</button>
         </div>
     )
 }

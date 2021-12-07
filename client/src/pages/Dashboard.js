@@ -28,7 +28,7 @@ const Dashboard = () => {
             <div class="dashboard-container">
                 <div class="favorites-container">
                     <h2 class="favorites">Dates</h2>
-                    <div class="flex-row">
+                    <div class="flex-row dates">
                         {
                             dates.map(date => {
                                 return <Date title={date.title} message={date.message} />

@@ -10,7 +10,7 @@ const Suggestion = (props) => {
     }
 
     return (
-        <div class="suggestion-card card">
+        <div class="suggestion-card">
             <button class="suggestion-button" key={props.sugg._id} onClick={handleSuggestion}>{props.sugg.name}</button>
         </div>
     )

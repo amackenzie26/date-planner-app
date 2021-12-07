@@ -16,10 +16,7 @@
     "concurrently": "^5.3.0"
   },
   "dependencies": {
-<<<<<<< HEAD
-=======
     "@material-ui/core": "^4.12.3",
->>>>>>> 6acbeea5190b63c1f81e575713a7dacca629e3de
     "bootstrap": "^5.1.3",
     "react-bootstrap": "^2.0.3",
     "react-router-dom": "^5.3.0"
