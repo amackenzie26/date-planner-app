@@ -41,16 +41,16 @@
 
   .card-title {
     color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.75px;
     -webkit-text-stroke-color: black;
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .card-text {
     color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color:black;
-    font-size: 24px;
+    font-size: 25px;
   }
 
   .calendar-link {

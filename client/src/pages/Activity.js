@@ -38,13 +38,12 @@ const Activity = (props) => {
             setLatitude(position.coords.latitude);
             setLongitude(position.coords.longitude)
         }
-
+        
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         } else {
             alert("Geolocation is not supported by this browser.");
         }
-
 
         const getLocations = async (lat, lon, suggestion) => {
             try {
