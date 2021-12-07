@@ -31,7 +31,7 @@ const Dashboard = () => {
                     <div class="flex-row dates">
                         {
                             dates.map(date => {
-                                return <Date title={date.title} message={date.message} />
+                                return <Date title={date.title} message={date.message} date={date.date} />
                             })
                         }
                     </div>
