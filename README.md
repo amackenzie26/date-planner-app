@@ -34,6 +34,9 @@ https://github.com/amackenzie26/date-planner-app/blob/main/client/public/images/
 ## See it in Action!
 * [](Enjoy!)
 
+## Github Repo
+* https://github.com/amackenzie26/date-planner-app
+
 ## Deployed Link
 * [](#)
 
