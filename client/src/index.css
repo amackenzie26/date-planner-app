@@ -1899,7 +1899,7 @@
     margin: 30px;
   } */
 
-  .date-email, .date-message {
+  .date-title, .date-email, .date-message {
     width: 100%;
     text-align: left;
   }
