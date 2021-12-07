@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { useParams, useHistory } from 'react-router-dom';
-import { getNearbyPlaces, getSuggestion } from '../utils/api';
-import { Modal, Button } from "react-bootstrap";
+import { getLocation, getNearbyPlaces, getSuggestion } from '../utils/api';
+import { Modal, Button, ListGroup, ListGroupItem } from "react-bootstrap";
 import { validateEmail } from '../utils/helpers';
 import { createDate } from '../utils/api';
 import { formatDate } from '../utils/helpers';
@@ -28,24 +28,41 @@ const Activity = (props) => {
 
     const history = useHistory();
 
+    const [latitude, setLatitude] = useState(0);
+    const [longitude, setLongitude] = useState(0);
+    const [locations, setLocations] = useState([]);
+
     useEffect(() => {
 
-        // const getLocations = async (suggestion) => {
-        //     try {
-        //         console.log(suggestion.term);
-        //         const res = await getNearbyPlaces(suggestion.term);
+        const showPosition = (position) => {
+            setLatitude(position.coords.latitude);
+            setLongitude(position.coords.longitude)
+        }
 
-        //         if (!res.ok) {
-        //             throw new Error('No nearby locations');
-        //         }
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
 
-        //         const locations = await res.json()
 
-        //         console.log(locations);
-        //     } catch (err) {
-        //         console.error(err);
-        //     }
-        // }
+        const getLocations = async (lat, lon, suggestion) => {
+            try {
+                console.log(suggestion.term);
+                const res = await getNearbyPlaces(lat, lon, suggestion.term);
+
+                if (!res.ok) {
+                    throw new Error('No nearby locations');
+                }
+
+                const locations = await res.json()
+
+                console.log(locations);
+                setLocations(locations.businesses)
+            } catch (err) {
+                console.error(err);
+            }
+        }
 
         const getSuggestionInfo = async () => {
             try {
@@ -58,7 +75,7 @@ const Activity = (props) => {
                 setSuggestion(suggestion);
                 console.log(suggestion);
 
-                // getLocations(suggestion);
+                getLocations(latitude, longitude, suggestion);
             } catch (err) {
                 console.error(err);
             }
@@ -91,7 +108,7 @@ const Activity = (props) => {
                 throw new Error(`Couldn't create date`);
             }
 
-            history.push('/dashboard')
+            history.push('/dashboard');
         } catch (err) {
             console.error(err);
         }
@@ -110,6 +127,14 @@ const Activity = (props) => {
                 <Button variant="primary" onClick={handleShow}>
                     Create Date
                 </Button>
+
+                <div class="map-location">
+                    <ListGroup>
+                    {locations.map(location => {
+                        return <a href={location.url} target="_blank"><ListGroupItem class="collection-item">{location.price} {location.name} | {location.location.address1}, {location.location.city} | {location.rating} Rating | Phone: {location.phone}</ListGroupItem></a>
+                    })}
+                    </ListGroup>
+                </div>
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
@@ -150,11 +175,12 @@ const Activity = (props) => {
                             display: 'block',
                             width: 'fit-content'
                         }}>
-                            <h4>When is your date?</h4>
+                        <label htmlFor="date-date" id="date-date">When is your date?</label>
                             <TextField
-                                id="date"
+                                id="date-date"
                                 label="Choose the date"
                                 type="date"
+                                name="date"
                                 defaultValue="2021-12-07"
                                 InputLabelProps={{
                                     shrink: true,

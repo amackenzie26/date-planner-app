@@ -57,33 +57,16 @@ export const getAllDates = () => {
     })
 }
 
-var yelpApiKey = "XGPJzdsArujs0a5GBLbAgRXVjA0Ht8qthqX-MLFDM0pckAYtxRSmRcJCodfZ9Yxk9WsRQt7Isno_i1ZOlRrlEDY7laqvOLzkb23nclEnir1HfZkyAPxi8jOkwAZfYXYx";
-var currentLat;
-var currentLon;
+var yelpApiKey = "WAmOXZL8Fj9kzmJyEkwV2b0K2UWB-KYwJYxxQX6DLn5fxc6FAcY0czcwMbXnW7iiq0-Y_H02S0b_MZEC28nynMizOY8GSdBQOxfTQk4Jg0RYGfataMUzii4hLYqvYXYx";
 
-const getLocation = () => {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
-}
+export const getNearbyPlaces = (currentLat, currentLon, searchTerm) => {
 
-const showPosition = (position) => {
-    currentLat = position.coords.latitude;
-    currentLon = position.coords.longitude;
-    console.log("Lat:" + currentLat + ", Lon:" + currentLon);
-}
+    console.log(currentLat)
+    console.log(currentLon)
+    console.log(searchTerm)
+    var url ="https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=" + searchTerm + "&latitude=" + currentLat + "&longitude=" + currentLon;
 
-export const getNearbyPlaces = (searchTerm) => {
-
-    if (currentLat == null && currentLon == null) {
-        getLocation();
-    }
-
-    var url ="https://api.yelp.com/v3/businesses/search?term=" + searchTerm + "&latitude=" + currentLat + "&longitude=" + currentLon;
-
-    fetch(url, {
+    return fetch(url, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
