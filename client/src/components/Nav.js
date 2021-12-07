@@ -28,9 +28,9 @@ const Nav = () => {
     return (
         <header>
             <nav class='app-nav'>
-                <a href="#" class="plan-link" onClick={() => handlePageChange("prompts")}>Plan A Date</a>
-                <a href="#" class="dashboard-link" onClick={() => handlePageChange("dashboard")}>Dashboard</a>
-                {Auth.loggedIn() && (<a href="#" class="logout-link" onClick={handleLogout}>Logout</a>)}
+                <a href="#prompts" class="plan-link" onClick={() => handlePageChange("prompts")}>Plan A Date</a>
+                <a href="#dashboard" class="dashboard-link" onClick={() => handlePageChange("dashboard")}>Dashboard</a>
+                {Auth.loggedIn() && (<a href="#logout" class="logout-link" onClick={handleLogout}>Logout</a>)}
             </nav>
         </header>
     )
