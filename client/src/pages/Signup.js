@@ -64,22 +64,18 @@ const Signup = () => {
         } catch (err) {
             console.error(err);
         }
-
-        // setUsername('');
-        // setEmail('');
-        // setFirstname('');
-        // setLastname('');
-        // setPassword('');
-        // setConfirmPassword('');
-
         
+    }
+
+    const backToLogin = () => {
+        history.push('/')
     }
 
     return (
         <div class="home-container">
             <h1 class="welcome">Welcome to Rendez-Vous!</h1>
 
-            <div class="card">
+            <div class="signup-card card">
                 <h2 class="signup-text">Create an account:</h2>
                 <form class="signup-form form">
                     <label htmlFor="username-signup">Username</label>
@@ -143,7 +139,7 @@ const Signup = () => {
                     />
 
                     <button class="btn submit-button" onClick={handleFormSubmit}>Create Account</button>
-
+                    <button class="btn submit-button btn-danger" onClick={backToLogin}>Back to Login</button>
                 </form>
                 {errorMessage && (
                     <div>

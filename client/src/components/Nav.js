@@ -16,6 +16,10 @@ const Nav = () => {
             if (page === "dashboard") {
                 history.push("/dashboard")
             }
+            
+            if (page === "calendar") {
+                window.location.href("https://calendar.google.com/");
+            }
         }
     }
 
@@ -30,7 +34,7 @@ const Nav = () => {
             </div>
             <nav class='app-nav'>
                 <a href="#dashboard" class="dashboard-link" onClick={() => handlePageChange("dashboard")}>Dashboard</a>
-                <a href="https://calendar.google.com/" class="calendar-link" target="https://calendar.google.com/" onClick={() => handlePageChange("calendar")}>My Calendar</a>
+                <a href="#calendar" class="calendar-link" onClick={() => handlePageChange("calendar")}>My Calendar</a>
                 {Auth.loggedIn() && (<a href="#logout" class="logout-link" onClick={handleLogout}>Logout</a>)}
             </nav>
         </header>

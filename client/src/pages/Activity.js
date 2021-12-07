@@ -5,8 +5,7 @@ import { getLocation, getNearbyPlaces, getSuggestion } from '../utils/api';
 import { Modal, Button, ListGroup, ListGroupItem } from "react-bootstrap";
 import { validateEmail } from '../utils/helpers';
 import { createDate } from '../utils/api';
-import { formatDate } from '../utils/helpers';
-
+import Auth from '../utils/auth';
 const Activity = (props) => {
     const [suggestion, setSuggestion] = useState([]);
     let { id } = useParams();
@@ -20,6 +19,7 @@ const Activity = (props) => {
         title: '',
         partnerEmail: '',
         message: '',
+        user: Auth.getUser().data._id,
         activity: id,
         date: new Date(),
     });
@@ -97,7 +97,6 @@ const Activity = (props) => {
             return;
         }
 
-        console.log(dateInfo);
         try {
             const res = await createDate(dateInfo);
             const date = await res.json();
@@ -119,7 +118,6 @@ const Activity = (props) => {
         <div>
             <div
                 className="d-flex align-items-center justify-content-center flex-column"
-                style={{ height: "100vh" }}
             >
                 <h1>{suggestion.name}</h1>
 
