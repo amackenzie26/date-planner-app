@@ -5,13 +5,13 @@ For this project we used HTML, CSS, Javascript, existing third-party API's and s
 This application allows users to create an account, login, and complete prompts to help themselves plan a date. It incorporate prompts to determine what type of activities the user would want to do on a date, then generates choices of activities for that date. Once an activity is slected the user can then create the date to be submitted to their dashboard. The user can enter a title such as "Date with Mia", their dates email, a message, and then can select the actual date they plan to meet. Using the Yelp API, the user can then see nearby venues for that specific activity. The dashboard then displays all the information and saves it for the user locally. 
 
 ## User Stories
-![nav](/public/images/login.JPG) 
-![nav](/public/images/signup.JPG) 
-![nav](/public/images/dashboard.JPG) 
-![nav](/public/images/prompts.JPG) 
-![nav](public/images/suggestion.JPG) 
-![nav](public/images/modal.JPG) 
-![nav](public/images/yelpapi.JPG) 
+![nav](./public/images/login.JPG) 
+![nav](./public/images/signup.JPG) 
+![nav](./public/images/dashboard.JPG) 
+![nav](./public/images/prompts.JPG) 
+![nav](./public/images/suggestion.JPG) 
+![nav](./public/images/modal.JPG) 
+![nav](./public/images/yelpapi.JPG) 
 
 https://github.com/amackenzie26/date-planner-app/blob/main/client/public/images/dashboard.JPG
 
