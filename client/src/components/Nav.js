@@ -18,7 +18,7 @@ const Nav = () => {
             }
             
             if (page === "calendar") {
-                window.location.href("https://calendar.google.com/");
+                window.open("https://calendar.google.com/");
             }
         }
     }
