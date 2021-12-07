@@ -35,6 +35,18 @@
     font-family: 'Times New Roman', Times, serif;
   }
 
+  .favorites {
+    color: black !important;
+  }
+
+  .card-title {
+    color: black !important;
+  }
+
+  .card-text {
+    color: black !important;
+  }
+
   .calendar-link {
     display: inline;
     margin-left: auto;
@@ -447,6 +459,7 @@
   }
 
   .welcome {
+    color: black !important;
     margin-bottom: 60px;
     display: block;
     font-family: cursive;
@@ -455,9 +468,14 @@
   }
 
   .login-text {
+    color: black !important;
     text-align: center;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+  }
+
+  .signup-text {
+    color: black !important;
   }
 
   .login-font {
@@ -470,8 +488,36 @@
     margin-right: auto;
   }
 
+  .username-signup {
+    color: black !important;
+  }
+
+  .firstname-signup {
+    color: black !important;
+  }
+  
+  .lastname-signup {
+    color: black !important;
+  }
+
+  .email-signup {
+    color: black !important;
+  }
+
+  .password-signup {
+    color: black !important;
+  }
+
+  .confirm-password-signup {
+    color: black !important;
+  }
+
   .login-form {
     text-align: center;
+  }
+
+  .signup-form {
+    color: black !important;
   }
   
   h1,
