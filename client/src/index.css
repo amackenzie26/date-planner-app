@@ -1965,10 +1965,13 @@
   }
 
   .suggestion-button {
+    background-size: cover;
     width: 300px;
     height: 450px;
     margin: 20px;
-    background-color: cyan;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight:bolder;
   }
 
   .favorites-container > .favorites {

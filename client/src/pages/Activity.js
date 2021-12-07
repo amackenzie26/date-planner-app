@@ -21,7 +21,7 @@ const Activity = (props) => {
         partnerEmail: '',
         message: '',
         activity: id,
-        date: '',
+        date: new Date(),
     });
 
     const [errorMessage, setErrorMessage] = useState('');
@@ -86,7 +86,6 @@ const Activity = (props) => {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-
         setDateInfo({ ...dateInfo, [name]: value })
     }
 
@@ -175,9 +174,9 @@ const Activity = (props) => {
                             display: 'block',
                             width: 'fit-content'
                         }}>
-                        <label htmlFor="date-date" id="date-date">When is your date?</label>
+                        <label htmlFor="date" id="label-date">When is your date?</label>
                             <TextField
-                                id="date-date"
+                                id="date"
                                 label="Choose the date"
                                 type="date"
                                 name="date"
@@ -185,6 +184,8 @@ const Activity = (props) => {
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
+                                 onChange={handleInputChange}
+
                             />
                         </div>
 
