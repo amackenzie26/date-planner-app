@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Date from '../components/Date';
-import { getAllDates } from '../utils/api';
+import { getDate, getAllDates } from '../utils/api';
+import Auth from '../utils/auth';
 
 const Dashboard = () => {
 
@@ -9,7 +10,9 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await getAllDates();
+                var id = Auth.getUser().data._id;
+                console.log(Auth.getUser().data._id)
+                const res = await getDate(id);
                 if (!res.ok) {
                     throw new Error('No list of Dates');
                 }
@@ -31,7 +34,7 @@ const Dashboard = () => {
                     <div class="flex-row dates">
                         {
                             dates.map(date => {
-                                return <Date title={date.title} message={date.message} />
+                                return <Date title={date.title} message={date.message} date={date.date} activity={date.activity} />
                             })
                         }
                     </div>

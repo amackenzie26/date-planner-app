@@ -57,6 +57,15 @@ export const getAllDates = () => {
     })
 }
 
+export const getDate = (id) => {
+    return fetch(`/api/date/${id}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+}
+
 var yelpApiKey = "WAmOXZL8Fj9kzmJyEkwV2b0K2UWB-KYwJYxxQX6DLn5fxc6FAcY0czcwMbXnW7iiq0-Y_H02S0b_MZEC28nynMizOY8GSdBQOxfTQk4Jg0RYGfataMUzii4hLYqvYXYx";
 
 export const getNearbyPlaces = (currentLat, currentLon, searchTerm) => {

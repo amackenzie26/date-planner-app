@@ -5,8 +5,7 @@ import { getLocation, getNearbyPlaces, getSuggestion } from '../utils/api';
 import { Modal, Button, ListGroup, ListGroupItem } from "react-bootstrap";
 import { validateEmail } from '../utils/helpers';
 import { createDate } from '../utils/api';
-import { formatDate } from '../utils/helpers';
-
+import Auth from '../utils/auth';
 const Activity = (props) => {
     const [suggestion, setSuggestion] = useState([]);
     let { id } = useParams();
@@ -20,8 +19,9 @@ const Activity = (props) => {
         title: '',
         partnerEmail: '',
         message: '',
+        user: Auth.getUser().data._id,
         activity: id,
-        date: '',
+        date: new Date(),
     });
 
     const [errorMessage, setErrorMessage] = useState('');
@@ -86,7 +86,6 @@ const Activity = (props) => {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-
         setDateInfo({ ...dateInfo, [name]: value })
     }
 
@@ -98,7 +97,6 @@ const Activity = (props) => {
             return;
         }
 
-        console.log(dateInfo);
         try {
             const res = await createDate(dateInfo);
             const date = await res.json();
@@ -120,7 +118,6 @@ const Activity = (props) => {
         <div>
             <div
                 className="d-flex align-items-center justify-content-center flex-column"
-                style={{ height: "100vh" }}
             >
                 <h1>{suggestion.name}</h1>
 
@@ -175,9 +172,9 @@ const Activity = (props) => {
                             display: 'block',
                             width: 'fit-content'
                         }}>
-                        <label htmlFor="date-date" id="date-date">When is your date?</label>
+                        <label htmlFor="date" id="label-date">When is your date?</label>
                             <TextField
-                                id="date-date"
+                                id="date"
                                 label="Choose the date"
                                 type="date"
                                 name="date"
@@ -185,6 +182,8 @@ const Activity = (props) => {
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
+                                 onChange={handleInputChange}
+
                             />
                         </div>
 

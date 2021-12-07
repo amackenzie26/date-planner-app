@@ -36,15 +36,21 @@
   }
 
   .favorites {
-    color: black !important;
+    color: black;
   }
 
   .card-title {
-    color: black !important;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 28px;
   }
 
   .card-text {
-    color: black !important;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+    font-size: 24px;
   }
 
   .calendar-link {
@@ -1965,10 +1971,13 @@
   }
 
   .suggestion-button {
+    background-size: cover;
     width: 300px;
     height: 450px;
     margin: 20px;
-    background-color: cyan;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight:bolder;
   }
 
   .favorites-container > .favorites {
@@ -1978,6 +1987,15 @@
     justify-content: space-evenly;
   }
 
+  .signup-card {
+    background-color:#FBF5F3 !important;
+  }
+
+  .date-card {
+    background-size: cover;
+    padding: 50px;
+    color: white !important;
+  }
   @media screen and (max-width: 768px) {
     .header-nav {
         flex-direction: column;
