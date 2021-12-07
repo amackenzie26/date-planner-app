@@ -19,12 +19,12 @@
   }
 
   .plan-link {
-    margin-right: 10px;
     color: #FBF5F3;
     font-family: 'Times New Roman', Times, serif;
     border-style: solid;
     border-color: white;
     border-radius: 5px;
+    margin: 5px;
     padding: 5px;
   }
 
@@ -274,40 +274,36 @@
     outline: 1px dotted ButtonText;
   }
 
-  .option-one {
-    /* background-color: #7B0828; */
-    background-image: url(https://i.insider.com/5acbcd3f7708e94b4d7e47e4?width=600&format=jpeg&auto=webp);
-    background-size: cover; 
+  .prompt-option {
+    background-size: cover;
     color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     font-size: 40px;
     border-radius: 5px;
     padding: 150px;
+    margin: 20px;
+    /* width: 40%; */
     justify-content: center;
     display: inline-flex;
     flex-wrap: wrap;
-    /* margin-left: -240px !important; */
-    filter: drop-shadow(10px 10px 4px #8DAA9D)
-  }
-  .option-two {
-    /* background-color: #7B0828; */
-    background-image: url(https://www.lovepanky.com/wp-content/uploads/2019/10/casual-first-date-ideas.jpg);
-    background-size: cover; 
-    color: white;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-    font-size: 40px;
-    border-radius: 5px;
-    padding: 150px;
-    justify-content: center;
-    display: inline-flex;
-    flex-wrap: wrap;
-    filter: drop-shadow(10px 10px 4px #8DAA9D)
+    filter: drop-shadow(10px 10px 4px #8DAA9D);
   }
 
+  @media screen and (max-width: 500px) {
+    .prompt-option {
+      padding: 100px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .prompt-option {
+      padding: 80px;
+    }
+  }
   .prompt-card {
     justify-content: center;
+    background-color: #FBF5F3;
   }
   
   /**
@@ -1899,9 +1895,9 @@
   .prompt-container {
     text-align: center;
   }
-  .prompt-card button {
+  /* .prompt-card button {
     margin: 30px;
-  }
+  } */
 
   .date-email, .date-message {
     width: 100%;
@@ -1920,12 +1916,6 @@
     width: 90%;
   }
 
-  @media screen and (min-width: 700px) {
-    .prompt-card {
-      flex-direction: row;
-    }
-  }
-
   .logo {
     width: 180px;
     height: 180px;
@@ -1937,17 +1927,84 @@
     background-color: lightblue;
   }
 
-  .suggestion-button {
-    width: 200px;
-    height: 300px;
-    margin: 20px;
-    background-color: cyan;
-  }
-
   .next-suggestion {
     margin: 0 auto;
   }
   
   .date-card {
     border: 1px solid rgba(0,0,0,.125) !important;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    background-color: #522B47;
+    font-size: 24px;
+  }
+
+  .app-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+
+  a, a:hover, a:focus, a:active {
+    color: #FBF5F3;
+    text-decoration: none;
+  }
+
+  .suggestion-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .suggestion-button {
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    background-color: cyan;
+  }
+
+  .favorites-container > .favorites {
+    text-align: center;
+  }
+  .favorites-container > .dates {
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+    }
+    
+    .suggestion-container {
+      flex-direction: column !important;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .suggestion-button {
+      width: 250px;
+      height: 375px;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    .suggestion-button {
+      width: 200px;
+      height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    .suggestion-button {
+      width: 300px;
+      height: 450px;
+    }
   }

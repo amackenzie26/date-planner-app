@@ -23,13 +23,14 @@ const Nav = () => {
         Auth.logout()
     }
 
-    //<a href="https://calendar.google.com/" class="calendar-link" target="https://calendar.google.com/" onClick={() => handlePageChange("calendar")}>My Calendar</a>
-
     return (
-        <header>
-            <nav class='app-nav'>
+        <header class="header-nav">
+            <div class="app-prompt">
                 <a href="#prompts" class="plan-link" onClick={() => handlePageChange("prompts")}>Plan A Date</a>
+            </div>
+            <nav class='app-nav'>
                 <a href="#dashboard" class="dashboard-link" onClick={() => handlePageChange("dashboard")}>Dashboard</a>
+                <a href="https://calendar.google.com/" class="calendar-link" target="https://calendar.google.com/" onClick={() => handlePageChange("calendar")}>My Calendar</a>
                 {Auth.loggedIn() && (<a href="#logout" class="logout-link" onClick={handleLogout}>Logout</a>)}
             </nav>
         </header>
