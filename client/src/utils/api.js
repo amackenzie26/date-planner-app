@@ -1,5 +1,3 @@
-
-
 export const createUser = (userData) => {
     return fetch('/api/signup', {
         method: 'POST',
